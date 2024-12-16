@@ -312,7 +312,7 @@
                 <h2 class="two">КЕЙСИ</h2>
             </div>
             <p class="description">
-                кожен наш проект — це симбіоз аналітики, стратегії та творчості.
+                кожен наш проєкт — це симбіоз аналітики, стратегії та творчості.
             </p>
         </div>
 
@@ -498,9 +498,7 @@
                             </div>
                             <p class="list-txt">
                                 Ми віримо, що оригінальний дизайн і сучасні технології здатні змінювати уявлення про
-                                бренд.
-                                Наші
-                                ідеї виходять за рамки стандартів.
+                                бренд.Наші ідеї виходять за рамки стандартів.
                             </p>
 
                         </div>
@@ -618,7 +616,45 @@
     </script>
 
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const listItems = document.querySelectorAll(".list-item");
 
+            listItems.forEach((item) => {
+                const title = item.querySelector(".list-title");
+                const text = item.querySelector(".list-txt");
+                const iconSmall = item.querySelector(".icon-small");
+                const iconBig = item.querySelector(".icon-big");
+
+                // Функция для изменения стилей
+                function applyHoverStyles() {
+                    title.style.color = "#b80202"; // Заголовок красный
+                    text.style.color = "#e0e0e0"; // Текст белый
+                    text.style.opacity = "1"; // Полная видимость
+                    iconSmall.style.backgroundColor = "#e0e0e0"; // Квадраты белые
+                    iconBig.style.backgroundColor = "#e0e0e0";
+                }
+
+                function resetStyles() {
+                    title.style.color = "#e0e0e0"; // Заголовок стандартный
+                    text.style.color = "#e0e0e0"; // Текст стандартный
+                    text.style.opacity = "0.1";
+                    iconSmall.style.backgroundColor = "#b80202"; // Квадраты стандартные
+                    iconBig.style.backgroundColor = "#b80202";
+                }
+
+                // При наведении на заголовок
+                title.addEventListener("mouseenter", applyHoverStyles);
+                title.addEventListener("mouseleave", resetStyles);
+
+                // При наведении на текст
+                text.addEventListener("mouseenter", applyHoverStyles);
+                text.addEventListener("mouseleave", resetStyles);
+            });
+        });
+
+
+    </script>
 
 
 

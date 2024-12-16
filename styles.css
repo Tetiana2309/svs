@@ -98,9 +98,10 @@ body {
     color: #fefefe;
     text-align: left;
     font-family: "Namu-Pro", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 140%;
     font-weight: 400;
+    text-transform: uppercase;
 
 }
 
@@ -122,9 +123,10 @@ body {
     color: #fefefe;
     text-align: left;
     font-family: "Namu-Pro", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 140%;
     font-weight: 400;
+    text-transform: uppercase;
 
 }
 
@@ -151,7 +153,7 @@ body {
 }
 
 .button-content {
-    width: 331px;
+    width: 360px;
     height: 66px;
     position: static;
 }
@@ -160,7 +162,7 @@ body {
     color: #fefefe;
     text-align: left;
     font-family: "Namu-Pro", sans-serif;
-    font-size: 22px;
+    font-size: 26px;
     line-height: 140%;
     font-weight: 400;
     position: absolute;
@@ -202,7 +204,7 @@ body {
     border-style: solid;
     border-color: #b80202;
     border-width: 4px 0 0 0;
-    width: 318px;
+    width: 360px;
     height: 0px;
     position: absolute;
     left: 0px;
@@ -283,7 +285,7 @@ p {
 
 .image-container-one {
     transform: translateX(150px);
-    /* Перемещение вправо на 50px */
+
 }
 
 
@@ -407,500 +409,7 @@ p {
 }
 
 
-/*--------------БЛОК НАШІ КЕЙСИ--------------*/
-
-/*текст*/
-
-.text-content {
-    padding-left: 428px;
-    margin-top: 140px;
-
-
-
-
-}
-
-.subtext {
-    color: #fefefe;
-    text-align: justify;
-    font-family: "Namu-Pro", sans-serif;
-    font-size: 20px;
-    line-height: 120%;
-    font-weight: 400;
-    text-transform: lowercase;
-    position: relative;
-    width: 338px;
-    padding-left: 8px;
-}
-
-.main-title {
-    height: 263px;
-    position: relative;
-
-
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-
-    align-items: center;
-
-
-}
-
-.one {
-    color: #fefefe;
-    text-align: left;
-    font-family: "Antonio-SemiBold", sans-serif;
-    font-size: 128px;
-    line-height: 120%;
-    font-weight: 600;
-    text-transform: uppercase;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-}
-
-.two {
-    color: #fefefe;
-    text-align: left;
-    font-family: "Antonio-SemiBold", sans-serif;
-    font-size: 128px;
-    line-height: 120%;
-    font-weight: 600;
-    text-transform: uppercase;
-    position: absolute;
-    left: 187px;
-    top: 109px;
-}
-
-.description {
-    color: #fefefe;
-    text-align: justify;
-    font-family: "Namu-Pro", sans-serif;
-    font-size: 20px;
-    line-height: 120%;
-    font-weight: 400;
-    text-transform: lowercase;
-    position: relative;
-    height: 51px;
-    width: 430px;
-    padding-left: 194px;
-}
-
-
-
-/*кейси*/
-
-
-.cases-row-one {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 24px;
-    margin-top: 120px;
-
-}
-
-
-.case {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
-
-}
-
-
-.case-container-one {
-    border-radius: 20px;
-    border: 1px solid #b7b7b7;
-    width: 712px;
-    height: 588px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, rgba(255, 0, 0, 0.3), transparent);
-}
-
-
-.case-content-one {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 628px;
-    height: 444px;
-    position: relative;
-    overflow: hidden;
-}
-
-.case-content-one video {
-    width: 100%;
-    height: 100%;
-
-    object-position: center;
-    display: block;
-
-}
-
-
-.case-container-two {
-    border-radius: 20px;
-    border: 1px solid #b7b7b7;
-    width: 618px;
-    height: 410px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, rgba(255, 0, 0, 0.3), transparent);
-
-
-
-}
-
-.case-content-two {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 534px;
-    height: 266px;
-    position: relative;
-    overflow: hidden;
-}
-
-.case-content-two video {
-    width: 100%;
-    height: 100%;
-
-    object-position: center;
-    display: block;
-
-}
-
-.btn-case {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-    cursor: pointer;
-}
-
-.btn-cont {
-    width: 150px;
-    height: 64px;
-    position: static;
-}
-
-.btn-txt-case {
-    color: #fefefe;
-    text-align: left;
-    font-family: "Namu-Pro", sans-serif;
-    font-size: 22px;
-    line-height: 140%;
-    font-weight: 400;
-    position: absolute;
-    left: 68px;
-    top: 11px;
-    transition: color 0.3s ease;
-}
-
-.rectangles_ {
-    width: 56px;
-    height: 50px;
-    position: static;
-}
-
-.rectangle_one_ {
-    background: #b80202;
-    width: 18px;
-    height: 48px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    overflow: hidden;
-    transition: background-color 0.3s ease;
-}
-
-.rectangle_two_ {
-    background: #b80202;
-    width: 34px;
-    height: 48px;
-    position: absolute;
-    left: 22px;
-    top: 0px;
-    overflow: hidden;
-    transition: background-color 0.3s ease;
-}
-
-.line_ {
-    margin-top: -4px;
-    border-style: solid;
-    border-color: #b80202;
-    border-width: 4px 0 0 0;
-    width: 150px;
-    height: 0px;
-    position: absolute;
-    left: 0px;
-    top: 66px;
-    transform-origin: 0 0;
-    transform: rotate(0deg) scale(1, 1);
-    transition: border-color 0.3s ease;
-}
-
-.btn-case:hover .btn-txt-case,
-.btn-case:focus .btn-txt-case {
-    color: #b80202;
-
-}
-
-.btn-case:hover .rectangle_one_,
-.btn-case:focus .rectangle_one_,
-.btn-case:hover .rectangle_two_,
-.btn-case:focus .rectangle_two_ {
-    background: #fefefe;
-
-}
-
-.btn-case:hover .line_,
-.btn-case:focus .line_ {
-    border-color: #fefefe;
-
-}
-
-
-
-.cases-row-two {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 24px;
-    margin-top: 120px;
-
-}
-
-.cases-row-three {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 24px;
-    margin-top: 120px;
-
-}
-
-/*--------------ЧЕТВЕРТИЙ БЛОК ЧОМУ ОБИРАЮТЬ НАС--------------*/
-
-.four-container {
-    margin-top: 200px;
-    display: block;
-
-}
-
-
-.main-title-two {
-    height: 382px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 24px;
-}
-
-.four {
-    color: #fefefe;
-    text-align: left;
-    font-family: "Antonio-SemiBold", sans-serif;
-    font-size: 128px;
-    line-height: 120%;
-    font-weight: 600;
-    text-transform: uppercase;
-    position: absolute;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    left: 303px;
-    top: 0px;
-    width: 404px;
-}
-
-.five {
-    color: #fefefe;
-    text-align: left;
-    font-family: "Antonio-SemiBold", sans-serif;
-    font-size: 128px;
-    line-height: 120%;
-    font-weight: 600;
-    text-transform: uppercase;
-    position: absolute;
-    left: 393px;
-    top: 114px;
-    width: 744px;
-}
-
-.six {
-    color: #fefefe;
-    text-align: left;
-    font-family: "Antonio-SemiBold", sans-serif;
-    font-size: 128px;
-    line-height: 120%;
-    font-weight: 600;
-    text-transform: uppercase;
-    position: absolute;
-    left: 582px;
-    top: 228px;
-    width: 286px;
-}
-
-
-.list-section {
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    padding: 52px 24px 0 24px;
-}
-
-.list-one {
-    display: flex;
-    flex-direction: column;
-
-
-}
-
-.list-item {
-    display: flex;
-    justify-content: space-between;
-
-
-}
-
-.icon-and-title {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-}
-
-.icon-group {
-    display: flex;
-    gap: 4px;
-    margin-right: 10px;
-
-}
-
-.icon-small {
-    width: 18px;
-    height: 48px;
-    background-color: #b80202;
-    margin-bottom: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.icon-big {
-    width: 34px;
-    height: 48px;
-    background-color: #b80202;
-    transition: background-color 0.3s ease;
-}
-
-.list-title {
-    color: #e0e0e0;
-    text-align: left;
-    font-family: "Namu-Pro", sans-serif;
-    font-size: 48px;
-    line-height: 140%;
-    font-weight: 400;
-    position: relative;
-    height: 68px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.list-txt {
-    color: #e0e0e0;
-    text-align: justify;
-    font-family: "Namu-Pro", sans-serif;
-    font-size: 20px;
-    line-height: 120%;
-    font-weight: 400;
-    position: relative;
-    width: 376px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
-
-}
-
-.list-line {
-    width: 100%;
-    height: 1px;
-    background-color: #e0e0e0;
-    margin-top: 44px;
-}
-
-
-
-.icon-and-title:hover+.list-txt {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.list-one:hover .icon-small,
-.list-one:hover .icon-big {
-    background-color: #efefef;
-
-}
-
-.list-one:hover .list-title {
-    color: #b80202;
-
-}
-
-.button-three {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 100px auto 0 auto;
-    text-align: center;
-    width: fit-content;
-    cursor: pointer;
-}
-
-.button-three:hover .btn-txt,
-.button-three:focus .btn-txt {
-    color: #b80202;
-
-}
-
-.button-three:hover .rectangle_one,
-.button-three:focus .rectangle_one,
-.button-three:hover .rectangle_two,
-.button-three:focus .rectangle_two {
-    background: #fefefe;
-
-}
-
-.button-three:hover .line,
-.button-three:focus .line {
-    border-color: #fefefe;
-
-}
-
-
-/*--------------П'ЯТИЙ БЛОК НАШІ ПОСЛУГИ--------------*/
+/*--------------БЛОК НАШІ ПОСЛУГИ--------------*/
 
 .five-container {
     display: flex;
@@ -1514,4 +1023,498 @@ p {
 
 .card.hide::before {
     transform: translateY(20px);
+}
+
+/*--------------БЛОК НАШІ КЕЙСИ--------------*/
+
+/*текст*/
+
+.text-content {
+    padding-left: 428px;
+    margin-top: 140px;
+
+
+
+
+}
+
+.subtext {
+    color: #fefefe;
+    text-align: justify;
+    font-family: "Namu-Pro", sans-serif;
+    font-size: 28px;
+    line-height: 120%;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    width: 628px;
+    padding-left: 8px;
+}
+
+.main-title {
+    height: 263px;
+    position: relative;
+
+
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+}
+
+.one {
+    color: #fefefe;
+    text-align: left;
+    font-family: "Antonio-SemiBold", sans-serif;
+    font-size: 128px;
+    line-height: 120%;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.two {
+    color: #fefefe;
+    text-align: left;
+    font-family: "Antonio-SemiBold", sans-serif;
+    font-size: 128px;
+    line-height: 120%;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    left: 187px;
+    top: 109px;
+}
+
+.description {
+    color: #fefefe;
+    text-align: justify;
+    font-family: "Namu-Pro", sans-serif;
+    font-size: 28px;
+    line-height: 120%;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    height: 51px;
+    width: 628px;
+
+}
+
+
+
+/*кейси*/
+
+
+.cases-row-one {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 120px;
+
+}
+
+
+.case {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+
+
+.case-container-one {
+    border-radius: 20px;
+    border: 1px solid #b7b7b7;
+    width: 712px;
+    height: 588px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.3), transparent);
+}
+
+
+.case-content-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 628px;
+    height: 444px;
+    position: relative;
+    overflow: hidden;
+}
+
+.case-content-one video {
+    width: 100%;
+    height: 100%;
+
+    object-position: center;
+    display: block;
+
+}
+
+
+.case-container-two {
+    border-radius: 20px;
+    border: 1px solid #b7b7b7;
+    width: 618px;
+    height: 410px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.3), transparent);
+
+
+
+}
+
+.case-content-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 534px;
+    height: 266px;
+    position: relative;
+    overflow: hidden;
+}
+
+.case-content-two video {
+    width: 100%;
+    height: 100%;
+
+    object-position: center;
+    display: block;
+
+}
+
+.btn-case {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.btn-cont {
+    width: 150px;
+    height: 64px;
+    position: static;
+}
+
+.btn-txt-case {
+    color: #fefefe;
+    text-align: left;
+    font-family: "Namu-Pro", sans-serif;
+    font-size: 26px;
+    line-height: 140%;
+    font-weight: 400;
+    position: absolute;
+    left: 68px;
+    top: 11px;
+    transition: color 0.3s ease;
+}
+
+.rectangles_ {
+    width: 56px;
+    height: 50px;
+    position: static;
+}
+
+.rectangle_one_ {
+    background: #b80202;
+    width: 18px;
+    height: 48px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.rectangle_two_ {
+    background: #b80202;
+    width: 34px;
+    height: 48px;
+    position: absolute;
+    left: 22px;
+    top: 0px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.line_ {
+    margin-top: -4px;
+    border-style: solid;
+    border-color: #b80202;
+    border-width: 4px 0 0 0;
+    width: 162px;
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    top: 66px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+    transition: border-color 0.3s ease;
+}
+
+.btn-case:hover .btn-txt-case,
+.btn-case:focus .btn-txt-case {
+    color: #b80202;
+
+}
+
+.btn-case:hover .rectangle_one_,
+.btn-case:focus .rectangle_one_,
+.btn-case:hover .rectangle_two_,
+.btn-case:focus .rectangle_two_ {
+    background: #fefefe;
+
+}
+
+.btn-case:hover .line_,
+.btn-case:focus .line_ {
+    border-color: #fefefe;
+
+}
+
+
+
+.cases-row-two {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 120px;
+
+}
+
+.cases-row-three {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 120px;
+
+}
+
+/*--------------БЛОК ЧОМУ ОБИРАЮТЬ НАС--------------*/
+
+.four-container {
+    margin-top: 200px;
+    display: block;
+
+}
+
+
+.main-title-two {
+    height: 382px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 24px;
+}
+
+.four {
+    color: #fefefe;
+    text-align: left;
+    font-family: "Antonio-SemiBold", sans-serif;
+    font-size: 128px;
+    line-height: 120%;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    left: 303px;
+    top: 0px;
+    width: 404px;
+}
+
+.five {
+    color: #fefefe;
+    text-align: left;
+    font-family: "Antonio-SemiBold", sans-serif;
+    font-size: 128px;
+    line-height: 120%;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    left: 393px;
+    top: 114px;
+    width: 744px;
+}
+
+.six {
+    color: #fefefe;
+    text-align: left;
+    font-family: "Antonio-SemiBold", sans-serif;
+    font-size: 128px;
+    line-height: 120%;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    left: 582px;
+    top: 228px;
+    width: 286px;
+}
+
+
+.list-section {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 52px 24px 0 24px;
+}
+
+.list-one {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.icon-and-title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.icon-group {
+    display: flex;
+    gap: 4px;
+    margin-right: 10px;
+
+}
+
+.icon-small {
+    width: 18px;
+    height: 48px;
+    background-color: #b80202;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-big {
+    width: 34px;
+    height: 48px;
+    background-color: #b80202;
+    transition: background-color 0.3s ease;
+}
+
+.list-title {
+    color: #e0e0e0;
+    text-align: left;
+    font-family: "Namu-Pro", sans-serif;
+    font-size: 48px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    height: 68px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.list-txt {
+    color: #e0e0e0;
+    text-align: justify;
+    font-family: "Namu-Pro", sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 400;
+    position: relative;
+    width: 476px;
+
+    text-transform: uppercase;
+    opacity: 0.1;
+
+}
+
+.list-line {
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin-top: 44px;
+}
+
+
+/* Базовые стили */
+.list-title {
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.icon-small,
+.icon-big {
+    transition: background-color 0.3s ease;
+}
+
+.list-txt {
+    color: #e0e0e0;
+    opacity: 0.1;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+
+
+.button-three {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.button-three:hover .btn-txt,
+.button-three:focus .btn-txt {
+    color: #b80202;
+
+}
+
+.button-three:hover .rectangle_one,
+.button-three:focus .rectangle_one,
+.button-three:hover .rectangle_two,
+.button-three:focus .rectangle_two {
+    background: #fefefe;
+
+}
+
+.button-three:hover .line,
+.button-three:focus .line {
+    border-color: #fefefe;
+
 }
