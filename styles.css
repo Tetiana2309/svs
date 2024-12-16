@@ -769,6 +769,7 @@ p {
 .list-one {
     display: flex;
     flex-direction: column;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.3), transparent);
 
 }
 
