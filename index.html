@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'NAMU';
+            src: url('fonts/NAMU-Bold.otf') format('opentype');
+            font-weight: 900;
+            font-style: normal;
+        }
+    </style>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.0/pixi.min.js"></script>
+</head>
+
+<body>
+    <!--<div id="custom-cursor"></div>-->
+    <!-------------------ХЕДЕР--------------------------->
+
+    <heder>
+        <div class="container page-header-container">
+            <nav class="menu-page-nav">
+                <a class="logo-link link">
+                    <svg class="icon" width="154" height="124">
+                        <use href="./images/icon.svg#icon-logo"></use>
+                    </svg>
+                </a>
+
+                <ul class="nav-list list">
+                    <li class="nav-item list">
+                        <a class="nav-link  link" href="">Про нас</a>
+                    </li>
+                    <li class="nav-item list">
+                        <a class="nav-link link" href="">Наші кейси</a>
+                    </li>
+                    <li class="nav-item list">
+                        <a class="nav-link link" href="">Чому ми?</a>
+                    </li>
+                    <li class="nav-item list">
+                        <a class="nav-link link" href="">Наші послуги</a>
+                    </li>
+                    <li class="nav-item language-switch">
+                        <a class="language-link link" href="#">ua</a>
+                        <span class="language-divider"></span>
+                        <a class="language-link link" href="#">pl</a>
+                    </li>
+                </ul>
+
+                <div class="button">
+                    <div class="button-content">
+                        <div class="rectangles">
+                            <div class="rectangle_one"></div>
+                            <div class="rectangle_two"></div>
+                        </div>
+                        <div class="btn-txt">ПОЧНІМО СПІВПРАЦЮ</div>
+                        <div class="line"></div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </heder>
+
+
+
+
+    <!-------------------ГОЛОВНИЙ БЛОК--------------------------->
+    <main>
+
+        <div class="main-container container">
+
+
+            <div class="title">
+                <h1 class="txt-one">SVS</h1>
+                <h1 class="txt-two">DIGITAL </h1>
+                <h1 class="txt-three">AGENCY</h1>
+            </div>
+
+            <div class="image-container-one">
+
+                <img src="./images/2.png" alt="3D Object" class="image" width="600" height="600">
+            </div>
+        </div>
+
+
+        <!------------------- БЛОК ТЕКСТ--------------------------->
+
+        <div class="text-container container">
+            <p class="text-one">
+                ми — команда, що створює унікальні рішення у світі діджитал. Наш підхід — це
+                поєднання інновацій, креативності та прагнення до досконалості.
+            </p>
+            <p class="text-two">
+                ми допомагаємо брендам говорити голосно, виглядати сучасно та досягати своїх
+                амбітних цілей.
+            </p>
+
+            <div class="button-two">
+                <div class="button-content">
+                    <div class="rectangles">
+                        <div class="rectangle_one"></div>
+                        <div class="rectangle_two"></div>
+                    </div>
+                    <div class="btn-txt">ПОЧНІМО СПІВПРАЦЮ</div>
+
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------- БЛОК НАШІ ПОСЛУГИ--------------------------->
+
+        <div class="parallax-container">
+            <div class="five-container card ">
+                <div class="content">
+                    <div class="text-content-five">
+                        <h3 class="title-five">РОЗРОБКА<br>САЙТІВ</h3>
+                        <p class="description-five">
+                            Ми створюємо сучасні та функціональні веб-сайти, які відповідають трендам і вимогам вашого
+                            бізнесу:
+                        </p>
+                        <div class="categories">
+                            <div class="category">Корпоративні сайти</div>
+                            <div class="category">Лендинги</div>
+                            <div class="category">Інтернет-магазини</div>
+                            <div class="category">E-commerce</div>
+                        </div>
+                    </div>
+                    <div class="cta-container">
+                        <div class="cta">
+                            <div class="cta-icons">
+                                <div class="icon-s"></div>
+                                <div class="icon-b"></div>
+                            </div>
+                            <span class="cta-text">ОТРИМАТИ БЕЗКОШТОВНУ ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ</span>
+                            <div class="cta-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container">
+
+                    <img src="./images/1.png" alt="3D Object" class="image" width="600" height="600">
+                </div>
+            </div>
+
+
+            <div class="six-container card">
+
+                <div class="image-container-s">
+
+                    <img src="./images/5.png" alt="3D Object" class="image-s" width="600" height="600">
+                </div>
+
+
+                <div class="content">
+                    <div class="text-content-six">
+                        <h3 class="title-six">UX/UI<br>ДИЗАЙН</h3>
+                        <p class="description-six">
+                            Ми проектуємо зручний і інтуїтивно зрозумілий інтерфейс, який привертає увагу та забезпечує
+                            комфорт користувачів.
+                        </p>
+                        <div class="categories-six">
+                            <div class="category-s">Адаптивний дизайн моб. пристроїв</div>
+                            <div class="category-s">Розробка дизайну під вашу ЦА</div>
+                            <div class="category-s">Тестування зручності</div>
+                        </div>
+
+                    </div>
+
+                    <div class="cta-container-s">
+                        <div class="cta-s">
+                            <div class="cta-icons-s">
+                                <div class="icon-s-s"></div>
+                                <div class="icon-b-s"></div>
+                            </div>
+                            <span class="cta-text-s">ОТРИМАТИ БЕЗКОШТОВНУ ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ</span>
+                            <div class="cta-line-s"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="seven-container card">
+                <div class="content">
+                    <div class="text-content-five">
+                        <h3 class="title-five">ТЕХНІЧНА<br>РОЗРОБКА</h3>
+                        <p class="description-five">
+                            Ми забезпечуємо технічну частину вашого сайту, щоб він працював бездоганно:
+
+                        </p>
+                        <div class="categories">
+                            <div class="category">Верстка</div>
+                            <div class="category">Інтеграція з CMS (Webflow, Weblium)</div>
+                            <div class="category">Оптимізація швидкості завантаження</div>
+                            <div class="category">CRM та платежі</div>
+                        </div>
+                    </div>
+                    <div class="cta-container">
+                        <div class="cta">
+                            <div class="cta-icons">
+                                <div class="icon-s"></div>
+                                <div class="icon-b"></div>
+                            </div>
+                            <span class="cta-text">ОТРИМАТИ БЕЗКОШТОВНУ ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ</span>
+                            <div class="cta-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container">
+
+                    <img src="./images/1.png" alt="3D Object" class="image" width="600" height="600">
+                </div>
+            </div>
+
+
+            <div class="eight-container card">
+
+                <div class="image-container-s">
+
+                    <img src="./images/5.png" alt="3D Object" class="image-s_" width="800" height="800">
+                </div>
+
+
+                <div class="content">
+                    <div class="text-content-six">
+                        <h3 class="title-six">ТАРГЕТОВАНА<br>РЕКЛАМА</h3>
+                        <p class="description-six">
+                            Ми налаштовуємо ефективну рекламу, щоб вона приносила результати:
+                        </p>
+                        <div class="categories-six">
+                            <div class="category-s">Відстеження результатів і коригування</div>
+                            <div class="category-s">Аналіз і вибір аудиторії</div>
+                            <div class="category-s">Створення рекламних креативів</div>
+                            <div class="category-s">Оптимізація кампаній під бюджет</div>
+                        </div>
+
+                    </div>
+
+                    <div class="cta-container_s">
+                        <div class="cta-s">
+                            <div class="cta-icons-s">
+                                <div class="icon-s-s"></div>
+                                <div class="icon-b-s"></div>
+                            </div>
+                            <span class="cta-text-s">ОТРИМАТИ БЕЗКОШТОВНУ ДІАГНОСТИКУ І КОНСУЛЬТАЦІЮ</span>
+                            <div class="cta-line-s"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="nine-container card">
+                <div class="content">
+                    <div class="text-content-nine">
+                        <h3 class="title-five">ЕФЕКТИВНИЙ<br>SMM</h3>
+                        <p class="description-five">
+                            Ми створюємо ідеальний образ вашого бренду в соцмережах:
+                        </p>
+                        <div class="categories">
+                            <div class="category">Створення візуального та текстового контенту</div>
+                            <div class="category">Планування публікацій та сторіз</div>
+                            <div class="category">Розробка контент-стратегії</div>
+
+                        </div>
+                    </div>
+                    <div class="cta-container-nine">
+                        <div class="cta-s">
+                            <div class="cta-icons-s">
+                                <div class="icon-s-s"></div>
+                                <div class="icon-b-s"></div>
+                            </div>
+                            <span class="cta-text-s">ОТРИМАТИ БЕЗКОШТОВНУ ДІАГНОСТИКУ І КОНСУЛЬТАЦІЮ</span>
+                            <div class="cta-line-s"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-container">
+
+                    <img src="./images/1.png" alt="3D Object" class="image" width="600" height="600">
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-------------------БЛОК НАШІ КЕЙСИ--------------------------->
+
+        <!--текст-->
+
+        <div class="text-content container">
+            <p class="subtext">
+                наші ідеї виходять поза межі звичного, щоб дарувати унікальні рішення для кожного.
+            </p>
+            <div class="main-title">
+                <h2 class="one">НАШІ</h2>
+                <h2 class="two">КЕЙСИ</h2>
+            </div>
+            <p class="description">
+                кожен наш проект — це симбіоз аналітики, стратегії та творчості.
+            </p>
+        </div>
+
+        <!--кейси-->
+
+        <div class="cases-row-one">
+            <!-- Первый кейс -->
+            <div class="case">
+                <div class="case-container-one">
+                    <div class="case-content-one">
+                        <video autoplay loop muted playsinline>
+                            <source src="./video/кейс-нфт.webm" type="video/webm">
+                            <source src="./video/кейс-нфт.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="btn-case">
+                    <div class="btn-cont">
+                        <div class="rectangles_">
+                            <div class="rectangle_one_"></div>
+                            <div class="rectangle_two_"></div>
+                        </div>
+                        <div class="btn-txt-case">ДЕТАЛІ</div>
+                        <div class="line_"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Второй кейс -->
+            <div class="case">
+                <div class="case-container-two">
+                    <div class="case-content-two">
+                        <video autoplay loop muted playsinline>
+                            <source src="./video/кейс-рамен.webm" type="video/webm">
+                            <source src="./video/кейс-рамен.mp4" type="video/mp4">
+                        </video>
+                    </div> <!-- Контейнер для содержимого -->
+                </div>
+                <div class="btn-case">
+                    <div class="btn-cont">
+                        <div class="rectangles_">
+                            <div class="rectangle_one_"></div>
+                            <div class="rectangle_two_"></div>
+                        </div>
+                        <div class="btn-txt-case">ДЕТАЛІ</div>
+                        <div class="line_"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cases-row-two">
+            <!-- Третий кейс -->
+            <div class="case">
+                <div class="case-container-two">
+                    <div class="case-content-two">
+                        <video autoplay loop muted playsinline>
+                            <source src="./video/кейс-маркетингова-агенція.webm" type="video/webm">
+                            <source src="./video/кейс-маркетингова-агенція.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="btn-case">
+                    <div class="btn-cont">
+                        <div class="rectangles_">
+                            <div class="rectangle_one_"></div>
+                            <div class="rectangle_two_"></div>
+                        </div>
+                        <div class="btn-txt-case">ДЕТАЛІ</div>
+                        <div class="line_"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Четвертый кейс -->
+            <div class="case">
+                <div class="case-container-one">
+                    <div class="case-content-one">
+                        <video autoplay loop muted playsinline>
+                            <source src="./video/кейс-грумінг-салон.webm" type="video/webm">
+                            <source src="./video/кейс-грумінг-салон.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="btn-case">
+                    <div class="btn-cont">
+                        <div class="rectangles_">
+                            <div class="rectangle_one_"></div>
+                            <div class="rectangle_two_"></div>
+                        </div>
+                        <div class="btn-txt-case">ДЕТАЛІ</div>
+                        <div class="line_"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cases-row-three">
+            <!-- Пятий кейс -->
+            <div class="case">
+                <div class="case-container-one">
+                    <div class="case-content-one">
+                        <video autoplay loop muted playsinline>
+                            <source src="./video/кейс-кебаб.webm" type="video/webm">
+                            <source src="./video/кейс-кебаб.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="btn-case">
+                    <div class="btn-cont">
+                        <div class="rectangles_">
+                            <div class="rectangle_one_"></div>
+                            <div class="rectangle_two_"></div>
+                        </div>
+                        <div class="btn-txt-case">ДЕТАЛІ</div>
+                        <div class="line_"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Шестой кейс -->
+            <div class="case">
+                <div class="case-container-two">
+                    <div class="case-content-two">
+                        <video autoplay loop muted playsinline>
+                            <source src="./video/кейс-ігровий.webm" type="video/webm">
+                            <source src="./video/кейс-ігровий.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="btn-case">
+                    <div class="btn-cont">
+                        <div class="rectangles_">
+                            <div class="rectangle_one_"></div>
+                            <div class="rectangle_two_"></div>
+                        </div>
+                        <div class="btn-txt-case">ДЕТАЛІ</div>
+                        <div class="line_"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------БЛОК ЧОМУ ОБИРАЮТЬ НАС--------------------------->
+
+        <div class="four-container">
+            <div class="four-cont">
+                <div class="main-title-two">
+                    <h2 class="four">ЧОМУ</h2>
+                    <h2 class="five">ОБИРАЮТЬ</h2>
+                    <h2 class="six">НАС</h2>
+                </div>
+
+                <div class="list-section">
+
+                    <!-- Первый блок -->
+                    <div class="list-one">
+                        <div class="list-item">
+                            <div class="icon-and-title">
+                                <div class="icon-group">
+                                    <div class="icon-small"></div>
+                                    <div class="icon-big"></div>
+                                </div>
+                                <h3 class="list-title">Індивідуальний підхід</h3>
+                            </div>
+                            <p class="list-txt">
+                                Кожен проект для нас — це нова історія. Ми вникаємо в суть вашого бізнесу, щоб створити
+                                рішення,
+                                яке справді працює.
+                            </p>
+
+                        </div>
+                        <div class="list-line"></div>
+                    </div>
+
+                    <!-- Второй блок -->
+                    <div class="list-one">
+                        <div class="list-item">
+                            <div class="icon-and-title">
+                                <div class="icon-group">
+                                    <div class="icon-small"></div>
+                                    <div class="icon-big"></div>
+                                </div>
+                                <h3 class="list-title">Креативність на максимумі </h3>
+                            </div>
+                            <p class="list-txt">
+                                Ми віримо, що оригінальний дизайн і сучасні технології здатні змінювати уявлення про
+                                бренд.
+                                Наші
+                                ідеї виходять за рамки стандартів.
+                            </p>
+
+                        </div>
+                        <div class="list-line"></div>
+                    </div>
+
+                    <!-- Третий блок -->
+                    <div class="list-one">
+                        <div class="list-item">
+                            <div class="icon-and-title">
+                                <div class="icon-group">
+                                    <div class="icon-small"></div>
+                                    <div class="icon-big"></div>
+                                </div>
+                                <h3 class="list-title">Цифрові інновації</h3>
+                            </div>
+                            <p class="list-txt">
+                                Ми не просто йдемо в ногу з часом — ми задаємо темп. Наші проєкти базуються на передових
+                                технологіях, що забезпечують вам перевагу на ринку.
+                            </p>
+
+                        </div>
+                        <div class="list-line"></div>
+                    </div>
+
+                    <!-- Четвертый блок -->
+                    <div class="list-one">
+                        <div class="list-item">
+                            <div class="icon-and-title">
+                                <div class="icon-group">
+                                    <div class="icon-small"></div>
+                                    <div class="icon-big"></div>
+                                </div>
+                                <h3 class="list-title">Результат понад усе</h3>
+                            </div>
+                            <p class="list-txt">
+                                Наша мета — не просто красивий дизайн чи стильний сайт, а інструмент, який приносить
+                                реальну
+                                користь вашому бізнесу.
+                            </p>
+
+                        </div>
+                        <div class="list-line"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="button-three">
+                <div class="button-content">
+                    <div class="rectangles">
+                        <div class="rectangle_one"></div>
+                        <div class="rectangle_two"></div>
+                    </div>
+                    <div class="btn-txt">ПОЧНІМО СПІВПРАЦЮ</div>
+
+                    <div class="line"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <!--скрипт для курсора
+    <script>
+        const customCursor = document.getElementById('custom-cursor');
+        document.addEventListener('mousemove', (e) => {
+            customCursor.style.left = `${e.pageX}px`;
+            customCursor.style.top = `${e.pageY}px`;
+        });
+        document.addEventListener('mousedown', () => {
+            customCursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+        });
+        document.addEventListener('mouseup', () => {
+            customCursor.style.transform = 'translate(-50%, -50%) scale(1)';
+        });
+    </script>-->
+
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".card");
+
+            let lastScrollY = window.scrollY; // Для отслеживания направления прокрутки
+
+            function checkCards() {
+                const triggerBottom = window.innerHeight * 0.85; // Порог видимости
+                const triggerTop = window.innerHeight * 0.2; // Порог для анимации вверх
+
+                cards.forEach((card) => {
+                    const cardTop = card.getBoundingClientRect().top;
+
+                    if (cardTop < triggerBottom && window.scrollY > lastScrollY) {
+                        // Прокрутка вниз: показать карточку
+                        card.classList.add("show");
+                        card.classList.remove("hide");
+                    } else if (cardTop > triggerTop && window.scrollY < lastScrollY) {
+                        // Прокрутка вверх: скрыть карточку
+                        card.classList.add("hide");
+                        card.classList.remove("show");
+                    }
+                });
+
+                lastScrollY = window.scrollY; // Обновляем позицию прокрутки
+            }
+
+            window.addEventListener("scroll", checkCards);
+            checkCards();
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
