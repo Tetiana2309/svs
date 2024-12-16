@@ -583,27 +583,30 @@
 
 
 
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const cards = document.querySelectorAll(".card");
-
-            let lastScrollY = window.scrollY; // Для отслеживания направления прокрутки
+            let lastScrollY = window.scrollY; // Сохранение позиции прокрутки
 
             function checkCards() {
-                const triggerBottom = window.innerHeight * 0.85; // Порог видимости
-                const triggerTop = window.innerHeight * 0.2; // Порог для анимации вверх
+                const triggerBottom = window.innerHeight * 0.85; // Порог для появления
+                const triggerTop = window.innerHeight * 0.2;    // Порог для скрытия
 
                 cards.forEach((card) => {
                     const cardTop = card.getBoundingClientRect().top;
 
                     if (cardTop < triggerBottom && window.scrollY > lastScrollY) {
-                        // Прокрутка вниз: показать карточку
+                        // Прокрутка вниз: показываем карточку
                         card.classList.add("show");
-                        card.classList.remove("hide");
+                        card.classList.remove("reverse");
                     } else if (cardTop > triggerTop && window.scrollY < lastScrollY) {
-                        // Прокрутка вверх: скрыть карточку
-                        card.classList.add("hide");
+                        // Прокрутка вверх: плавно анимируем
+                        card.classList.add("reverse");
                         card.classList.remove("show");
+                    } else if (window.scrollY > lastScrollY) {
+                        // Сброс состояния reverse при возвращении вниз
+                        card.classList.remove("reverse");
                     }
                 });
 
@@ -611,9 +614,14 @@
             }
 
             window.addEventListener("scroll", checkCards);
-            checkCards();
+            checkCards(); // Инициализация
         });
+
+
     </script>
+
+
+
 
 
     <script>
