@@ -659,10 +659,7 @@ p {
     background: radial-gradient(circle, rgba(255, 0, 0, 0.3), transparent);
 }
 
-.text-content-six {
-    text-align: right;
-
-}
+.text-content-six {}
 
 .title-six {
     font-family: "Namu-Pro", sans-serif;
@@ -671,6 +668,7 @@ p {
     font-weight: 400;
     color: #fefefe;
     text-transform: uppercase;
+    text-align: right;
 }
 
 .description-six {
@@ -680,7 +678,7 @@ p {
     font-weight: 400;
     color: var(--color-1);
     margin-top: 20px;
-
+    text-align: right;
 }
 
 .categories-six {
