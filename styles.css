@@ -348,27 +348,31 @@ p {
 .text-one {
     color: #fefefe;
     font-family: "Namu-Pro", sans-serif;
-    font-size: 20px;
+    font-size: 28px;
     line-height: 130%;
     font-weight: 400;
     margin: 0 0 26px 0;
-    width: 428px;
+    width: 928px;
 
     text-align: justify;
-    text-transform: lowercase;
+
+    text-transform: uppercase;
+
 }
 
 .text-two {
     color: #fefefe;
     font-family: "Namu-Pro", sans-serif;
-    font-size: 20px;
+    font-size: 28px;
     line-height: 130%;
     font-weight: 400;
     margin: 0 0 60px 0;
-    width: 428px;
+    width: 928px;
 
     text-align: justify;
-    text-transform: lowercase;
+
+
+    text-transform: uppercase;
 }
 
 .button-two {
@@ -1457,7 +1461,7 @@ p {
 .parallax-container {
     position: relative;
     overflow: hidden;
-    margin-top: 100px;
+
 }
 
 
