@@ -156,6 +156,7 @@ body {
     width: 360px;
     height: 66px;
     position: static;
+    cursor: pointer;
 }
 
 .btn-txt {
@@ -342,6 +343,7 @@ p {
     align-items: center;
     text-align: center;
     box-sizing: border-box;
+    margin-top: 100px;
 
 
 }
@@ -410,6 +412,10 @@ p {
 
 
 /*--------------БЛОК НАШІ ПОСЛУГИ--------------*/
+
+.parallax-container {
+    margin-top: 200px;
+}
 
 .five-container {
     display: flex;
@@ -659,7 +665,7 @@ p {
     background: radial-gradient(circle, rgba(255, 0, 0, 0.3), transparent);
 }
 
-.text-content-six {}
+
 
 .title-six {
     font-family: "Namu-Pro", sans-serif;
@@ -1027,7 +1033,7 @@ p {
 
 .text-content {
     padding-left: 428px;
-    margin-top: 140px;
+    margin-top: 200px;
 
 
 
@@ -1452,6 +1458,7 @@ p {
 
     text-transform: uppercase;
     opacity: 0.1;
+    cursor: pointer;
 
 }
 
@@ -1513,4 +1520,399 @@ p {
 .button-three:focus .line {
     border-color: #fefefe;
 
+}
+
+
+
+
+
+
+
+/*--------------БЛОК ФОРМА ЗВ'ЯЗКУ--------------*/
+.form {
+    margin-top: 200px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.input-section.hidden {
+    display: none;
+}
+
+
+.form-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.title-form {
+    color: #fefefe;
+    text-align: left;
+    font-family: "Namu-Pro", sans-serif;
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.btn-form {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.btn-form- {
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    border-width: 1px;
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    background: none;
+    color: var(--color-1);
+    font-family: "Namu-Pro", sans-serif;
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-form-:hover,
+.btn-form-:focus {
+    background-color: none;
+    color: var(--color-2);
+    border-color: var(--color-2);
+    outline: none;
+
+}
+
+.input-section {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 40px 0;
+
+}
+
+.input-section input {
+    width: 794px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    color: #e0e0e0;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-section input:focus {
+    border-bottom: 1px solid #ffffff;
+
+}
+
+.input-section input::placeholder {
+    color: var(--color-3);
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.5;
+    text-transform: lowercase;
+}
+
+.checkbox-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.input-section.visible {
+    display: flex;
+
+}
+
+.checkbox-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.checkbox-section input[type="checkbox"] {
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    border: 2px solid #b80202;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.checkbox-section input[type="checkbox"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    width: 10px;
+    height: 10px;
+    border: solid #b80202;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+
+}
+
+.checkbox-section label {
+    color: #e0e0e0;
+    opacity: 0.6;
+    font-family: "Namu-Pro", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.button-form {
+    position: relative;
+    width: 330px;
+    cursor: pointer;
+
+}
+
+.button-content-form {
+    width: 360px;
+    height: 66px;
+    position: static;
+}
+
+.btn-txt-form {
+    color: #fefefe;
+    text-align: left;
+    font-family: "Namu-Pro", sans-serif;
+    font-size: 26px;
+    line-height: 140%;
+    font-weight: 400;
+    position: absolute;
+    left: 68px;
+    top: 11px;
+    transition: color 0.3s ease;
+}
+
+.rectangles-form {
+    width: 56px;
+    height: 50px;
+    position: static;
+}
+
+.rectangle_one-form {
+    background: #b80202;
+    width: 18px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.rectangle_two-form {
+    background: #b80202;
+    width: 34px;
+    height: 50px;
+    position: absolute;
+    left: 22px;
+    top: 0px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.line-form {
+    margin-top: -4px;
+    border-style: solid;
+    border-color: #b80202;
+    border-width: 4px 0 0 0;
+    width: 328px;
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    top: 66px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+    transition: border-color 0.3s ease;
+}
+
+.button-form:hover .btn-txt-form,
+.button-form:focus .btn-txt-form {
+    color: #b80202;
+
+}
+
+.button-form:hover .rectangle_one-form,
+.button-form:focus .rectangle_one-form,
+.button-form:hover .rectangle_two-form,
+.button-form:focus .rectangle_two-form {
+    background: #fefefe;
+
+}
+
+.button-form:hover .line-form,
+.button-form:focus .line-form {
+    border-color: #fefefe;
+
+}
+
+/* Скрытый блок */
+.hidden {
+    display: none;
+}
+
+/* Блок уведомлений */
+.notification {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    background-color: none;
+    font-family: "Namu-Pro", sans-serif;
+
+    line-height: 120%;
+    font-weight: 400;
+    color: var(--color-1);
+    /* Цвет текста */
+    padding: 30px 30px;
+    border-radius: 5px;
+    border: 1px solid var(--color-3);
+    font-size: 14px;
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0.95;
+    animation: fadeIn 0.5s ease-in-out;
+    text-transform: uppercase;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 0.95;
+        transform: translateY(0);
+    }
+}
+
+/* Анимация исчезновения */
+@keyframes fadeOut {
+    from {
+        opacity: 0.95;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+
+
+/*--------------БЛОК ФУТЕР--------------*/
+
+.footer {
+    margin-top: 200px;
+}
+
+.logo-email {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.email-address {
+    color: #fefefe;
+    text-align: left;
+    font-family: "Namu-Pro", sans-serif;
+    font-size: 64px;
+    line-height: 120%;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 24px;
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 80px;
+}
+
+.btn-footer {
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    border-width: 1px;
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    background: none;
+    color: var(--color-1);
+    font-family: "Namu-Pro", sans-serif;
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    width: 318px;
+
+}
+
+.btn-footer:hover,
+.btn-footer:focus {
+    background-color: none;
+    color: var(--color-2);
+    border-color: var(--color-2);
+    outline: none;
+
+}
+
+.footer-txt {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 160px;
+    margin-bottom: 30px;
+}
+
+
+.footer_txt {
+    color: #fefefe;
+    text-align: right;
+    font-family: "Namu-Pro", sans-serif;
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
 }
