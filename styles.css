@@ -6,6 +6,12 @@
 }
 
 
+html {
+    scroll-behavior: smooth;
+    /* Плавный скролл для якорей */
+}
+
+
 
 h1,
 h2,
@@ -55,8 +61,6 @@ button {
 
 
 .container {
-
-
     margin-right: auto;
     margin-left: auto;
     padding-left: 24px;
@@ -64,6 +68,18 @@ button {
 
 
 }
+
+@media screen and (min-width: 375px) {
+    .container {
+        width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+}
+
+
 
 body {
     background-color: black;
@@ -73,10 +89,6 @@ body {
 
 /*--------------ХЕДЕР--------------*/
 
-
-
-
-
 .menu-page-nav {
     display: flex;
     justify-content: space-between;
@@ -84,7 +96,6 @@ body {
 }
 
 .nav-list {
-
     display: flex;
     flex-direction: row;
     gap: 34px;
@@ -105,10 +116,16 @@ body {
 
 }
 
-.nav-link:hover,
-.nav-link:focus {
+
+
+.nav-link:hover {
     color: #b80202;
-    outline: none;
+    /* Красный цвет при наведении */
+}
+
+.nav-link.active {
+    color: #b80202;
+    /* Красный цвет активной ссылки */
 }
 
 .language-switch {
@@ -150,6 +167,7 @@ body {
 .button {
     position: relative;
 
+
 }
 
 .button-content {
@@ -170,6 +188,7 @@ body {
     left: 68px;
     top: 11px;
     transition: color 0.3s ease;
+    width: 370px;
 }
 
 .rectangles {
@@ -215,6 +234,10 @@ body {
     transition: border-color 0.3s ease;
 }
 
+
+
+
+
 .button:hover .btn-txt,
 .button:focus .btn-txt {
     color: #b80202;
@@ -234,6 +257,10 @@ body {
     border-color: #fefefe;
 
 }
+
+
+
+
 
 /*
 
@@ -325,8 +352,77 @@ p {
 
 }
 
+.image-main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation:
+        complex-motion 30s ease-in-out infinite,
+        flicker-dim 8s ease-in-out infinite,
+        morph-shape 14s ease-in-out infinite;
+    transform-origin: center;
+}
 
 
+@media screen and (min-width: 375px) {
+    .main-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .title {
+        position: absolute;
+        top: 50%;
+        align-items: center;
+        z-index: 2;
+        left: 3%;
+    }
+
+    .title h1 {
+        font-size: 100px;
+        line-height: 1.1;
+        color: #ffffff;
+        text-transform: uppercase;
+        align-items: center;
+    }
+
+    .txt-one {
+        margin-bottom: -10px;
+
+    }
+
+    .txt-two {
+        margin-bottom: -10px;
+    }
+
+    .txt-three {
+        margin-bottom: 0;
+
+    }
+
+    .image-container-one {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    .image-main {
+        width: 130%;
+        max-width: 500px;
+        height: auto;
+        transform-origin: center;
+    }
+
+
+
+
+}
 
 
 
@@ -411,6 +507,58 @@ p {
 }
 
 
+@media screen and (min-width: 375px) {
+
+    .text-container {
+
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+        margin-top: 0px;
+
+
+    }
+
+    .text-one {
+        color: #fefefe;
+        font-family: "Namu-Pro", sans-serif;
+        font-size: 16px;
+        line-height: 130%;
+        font-weight: 400;
+        margin: 0 0 26px 0;
+        width: 300px;
+
+        text-align: justify;
+
+        text-transform: uppercase;
+
+    }
+
+    .text-two {
+        color: #fefefe;
+        font-family: "Namu-Pro", sans-serif;
+        font-size: 16px;
+        line-height: 130%;
+        font-weight: 400;
+        margin: 0 0 60px 0;
+        width: 300px;
+
+        text-align: justify;
+
+
+        text-transform: uppercase;
+    }
+
+}
+
+
+
+
 /*--------------БЛОК НАШІ ПОСЛУГИ--------------*/
 
 .parallax-container {
@@ -483,6 +631,15 @@ p {
     cursor: pointer;
 }
 
+.lang-pl .cta-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 0 0 0;
+    width: 700px;
+    height: 66px;
+    cursor: pointer;
+}
 
 .cta {
     display: flex;
@@ -536,6 +693,11 @@ p {
     transform: rotate(0deg) scale(1, 1);
     transition: border-color 0.3s ease;
 }
+
+.lang-pl .cta-line {
+    width: 700px;
+}
+
 
 .image-container {
     position: relative;
@@ -634,6 +796,7 @@ p {
     }
 }
 
+.image-main,
 .image,
 .image-s,
 .image-s_ {
@@ -716,6 +879,16 @@ p {
     cursor: pointer;
 }
 
+.lang-pl .cta-container-s {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 50px;
+    width: 820px;
+    height: 66px;
+    cursor: pointer;
+}
+
 .cta-container_s {
     display: flex;
     justify-content: flex-end;
@@ -726,6 +899,16 @@ p {
     cursor: pointer;
 }
 
+
+.lang-pl .cta-container_s {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 50px;
+    width: 740px;
+    height: 66px;
+    cursor: pointer;
+}
 
 
 .cta-s {
@@ -769,6 +952,12 @@ p {
     width: 738px;
     position: absolute;
     top: 66px;
+}
+
+.lang-pl .cta-line-s {
+
+    width: 682px;
+
 }
 
 .image-container-s {
@@ -1780,18 +1969,16 @@ p {
     display: none;
 }
 
-/* Блок уведомлений */
+
 .notification {
     position: fixed;
     top: 50px;
     right: 20px;
     background-color: none;
     font-family: "Namu-Pro", sans-serif;
-
     line-height: 120%;
     font-weight: 400;
     color: var(--color-1);
-    /* Цвет текста */
     padding: 30px 30px;
     border-radius: 5px;
     border: 1px solid var(--color-3);
@@ -1891,12 +2078,20 @@ p {
 
 .btn-footer:hover,
 .btn-footer:focus {
-    background-color: none;
-    color: var(--color-2);
-    border-color: var(--color-2);
-    outline: none;
+    color: #b80202;
+    /* Красный цвет при наведении */
+    border-color: #b80202;
+    /* Красная граница */
+}
+
+.btn-footer:active {
+    color: #fefefe;
+    /* Возвращаем белый цвет при клике */
+    border-color: var(--color-1);
 
 }
+
+
 
 .footer-txt {
     display: flex;
@@ -1915,4 +2110,51 @@ p {
     line-height: 140%;
     font-weight: 400;
     position: relative;
+}
+
+
+
+/* Стили для кнопки при польском языке */
+.lang-pl .btn-txt {
+    width: 400px;
+    font-size: 22px;
+}
+
+
+.lang-pl .button-content {
+    width: 400px;
+}
+
+
+
+.lang-pl .line {
+    width: 404px;
+}
+
+
+
+
+.lang-pl .btn-cont {
+    width: 224px;
+
+}
+
+.lang-pl .line_ {
+    width: 224px;
+
+}
+
+.lang-pl .button-form {
+    width: 270px;
+
+}
+
+.lang-pl .button-content-form {
+    width: 264px;
+
+}
+
+.lang-pl .line-form {
+    width: 264px;
+
 }

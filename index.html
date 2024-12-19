@@ -30,7 +30,7 @@
     <!--<div id="custom-cursor"></div>-->
     <!-------------------ХЕДЕР--------------------------->
 
-    <heder>
+    <header>
         <div class="container page-header-container">
             <nav class="menu-page-nav">
                 <a class="logo-link link">
@@ -39,40 +39,47 @@
                     </svg>
                 </a>
 
+                <!-- бургер меню -->
+
+
                 <ul class="nav-list list">
                     <li class="nav-item list">
-                        <a class="nav-link  link" href="#about">ПРО НАС</a>
+                        <a class="nav-link link" href="#about" data-lang-ua="ПРО НАС" data-lang-pl="O NAS">ПРО НАС</a>
                     </li>
                     <li class="nav-item list">
-                        <a class="nav-link link" href="#services">НАШІ ПОСЛУГИ</a>
+                        <a class="nav-link link" href="#services" data-lang-ua="НАШІ ПОСЛУГИ"
+                            data-lang-pl="NASZE USŁUGI">НАШІ ПОСЛУГИ</a>
                     </li>
                     <li class="nav-item list">
-                        <a class="nav-link link" href="#cases">НАШІ КЕЙСИ</a>
+                        <a class="nav-link link" href="#cases" data-lang-ua="НАШІ КЕЙСИ"
+                            data-lang-pl="NASZE PRZYKŁADY">НАШІ КЕЙСИ</a>
                     </li>
                     <li class="nav-item list">
-                        <a class="nav-link link" href="#why-us">ЧОМУ МИ?</a>
+                        <a class="nav-link link" href="#why-us" data-lang-ua="ЧОМУ МИ?" data-lang-pl="DLACZEGO MY?">ЧОМУ
+                            МИ?</a>
                     </li>
                     <li class="nav-item language-switch">
-                        <a class="language-link link" href="#">ua</a>
+                        <a class="language-link link active" href="#" data-language="ua">UA</a>
                         <span class="language-divider"></span>
-                        <a class="language-link link" href="#">pl</a>
+                        <a class="language-link link" href="#" data-language="pl">PL</a>
                     </li>
                 </ul>
 
-                <div class="button">
+                <div class="button cta-btn">
                     <div class="button-content">
                         <div class="rectangles">
                             <div class="rectangle_one"></div>
                             <div class="rectangle_two"></div>
                         </div>
-                        <div class="btn-txt">ПОЧНІМО СПІВПРАЦЮ</div>
+                        <div class="btn-txt" data-lang-ua="ПОЧНІМО СПІВПРАЦЮ" data-lang-pl="ROZPOCZNIJMY WSPÓŁPRACĘ">
+                            ПОЧНІМО СПІВПРАЦЮ</div>
                         <div class="line"></div>
                     </div>
-
                 </div>
             </nav>
         </div>
-    </heder>
+    </header>
+
 
 
 
@@ -92,7 +99,7 @@
 
             <div class="image-container-one">
 
-                <img src="./images/2.png" alt="3D Object" class="image" width="600" height="600">
+                <img src="./images/2.png" alt="3D Object" class="image-main" width="600" height="600">
             </div>
         </div>
 
@@ -100,23 +107,26 @@
         <!------------------- БЛОК ТЕКСТ--------------------------->
 
         <div class="text-container container" id="about">
-            <p class="text-one">
-                ми — команда, що створює унікальні рішення у світі діджитал. Наш підхід — це
-                поєднання інновацій, креативності та прагнення до досконалості.
+            <p class="text-one"
+                data-lang-ua="ми — команда, що створює унікальні рішення у світі діджитал. Наш підхід — це поєднання інновацій, креативності та прагнення до досконалості."
+                data-lang-pl="jesteśmy zespołem, który tworzy unikalne rozwiązania w świecie cyfrowym. Nasze podejście to połączenie innowacji, kreatywności i dążenia do doskonałości.">
+                ми — команда, що створює унікальні рішення у світі діджитал. Наш підхід — це поєднання інновацій,
+                креативності та прагнення до досконалості.
             </p>
-            <p class="text-two">
-                ми допомагаємо брендам говорити голосно, виглядати сучасно та досягати своїх
-                амбітних цілей.
+            <p class="text-two"
+                data-lang-ua="ми допомагаємо брендам говорити голосно, виглядати сучасно та досягати своїх амбітних цілей."
+                data-lang-pl="pomagamy markom mówić głośno, wyglądać nowocześnie i osiągać swoje ambitne cele.">
+                ми допомагаємо брендам говорити голосно, виглядати сучасно та досягати своїх амбітних цілей.
             </p>
 
-            <div class="button-two">
+            <div class="button-two cta-btn">
                 <div class="button-content">
                     <div class="rectangles">
                         <div class="rectangle_one"></div>
                         <div class="rectangle_two"></div>
                     </div>
-                    <div class="btn-txt">ПОЧНІМО СПІВПРАЦЮ</div>
-
+                    <div class="btn-txt" data-lang-ua="ПОЧНІМО СПІВПРАЦЮ" data-lang-pl="ROZPOCZNIJMY WSPÓŁPRACĘ">ПОЧНІМО
+                        СПІВПРАЦЮ</div>
                     <div class="line"></div>
                 </div>
             </div>
@@ -125,177 +135,204 @@
         <!------------------- БЛОК НАШІ ПОСЛУГИ--------------------------->
 
         <div class="parallax-container" id="services">
-            <div class="five-container card ">
+            <!-- РОЗРОБКА САЙТІВ -->
+            <div class="five-container card">
                 <div class="content">
                     <div class="text-content-five">
-                        <h3 class="title-five">РОЗРОБКА<br>САЙТІВ</h3>
-                        <p class="description-five">
+                        <h3 class="title-five" data-lang-ua="РОЗРОБКА САЙТІВ" data-lang-pl="TWORZENIE STRON">
+                            РОЗРОБКА<br>САЙТІВ</h3>
+                        <p class="description-five"
+                            data-lang-ua="Ми створюємо сучасні та функціональні веб-сайти, які відповідають трендам і вимогам вашого бізнесу:"
+                            data-lang-pl="Tworzymy nowoczesne i funkcjonalne strony internetowe, które odpowiadają trendom i wymaganiom Twojego biznesu:">
                             Ми створюємо сучасні та функціональні веб-сайти, які відповідають трендам і вимогам вашого
                             бізнесу:
                         </p>
                         <div class="categories">
-                            <div class="category">Корпоративні сайти</div>
-                            <div class="category">Лендинги</div>
-                            <div class="category">Інтернет-магазини</div>
-                            <div class="category">E-commerce</div>
+                            <div class="category" data-lang-ua="Корпоративні сайти" data-lang-pl="Strony korporacyjne">
+                                Корпоративні сайти</div>
+                            <div class="category" data-lang-ua="Лендинги" data-lang-pl="Strony docelowe">Лендинги</div>
+                            <div class="category" data-lang-ua="Інтернет-магазини" data-lang-pl="Sklepy internetowe">
+                                Інтернет-магазини</div>
+                            <div class="category" data-lang-ua="E-commerce" data-lang-pl="E-commerce">E-commerce</div>
                         </div>
                     </div>
-                    <div class="cta-container">
+                    <div class="cta-container cta-btn">
                         <div class="cta">
                             <div class="cta-icons">
                                 <div class="icon-s"></div>
                                 <div class="icon-b"></div>
                             </div>
-                            <span class="cta-text">ОТРИМАТИ БЕЗКОШТОВНУ ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ</span>
+                            <span class="cta-text" data-lang-ua="ОТРИМАТИ БЕЗКОШТОВНУ ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ"
+                                data-lang-pl="UZYSKAĆ BEZPŁATNĄ WIZUALIZACJĘ TWOJEJ STRONY">ОТРИМАТИ БЕЗКОШТОВНУ
+                                ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ</span>
                             <div class="cta-line"></div>
                         </div>
                     </div>
                 </div>
                 <div class="image-container">
-
                     <img src="./images/1.png" alt="3D Object" class="image" width="600" height="600">
                 </div>
             </div>
 
-
+            <!-- UX/UI ДИЗАЙН -->
             <div class="six-container card">
-
                 <div class="image-container-s">
-
                     <img src="./images/5.png" alt="3D Object" class="image-s" width="600" height="600">
                 </div>
-
-
                 <div class="content">
                     <div class="text-content-six">
-                        <h3 class="title-six">UX/UI<br>ДИЗАЙН</h3>
-                        <p class="description-six">
+                        <h3 class="title-six" data-lang-ua="UX/UI ДИЗАЙН" data-lang-pl="UX/UI PROJEKTOWANIE">
+                            UX/UI<br>ДИЗАЙН</h3>
+                        <p class="description-six"
+                            data-lang-ua="Проектуємо інтерфейси, які зручні, зрозумілі та ефективні для користувачів:"
+                            data-lang-pl="Projektujemy interfejsy, które są wygodne, zrozumiałe i skuteczne dla użytkowników:">
                             Проектуємо інтерфейси, які зручні, зрозумілі та ефективні для користувачів:
                         </p>
                         <div class="categories-six">
-                            <div class="category-s">Адаптивний дизайн моб. пристроїв</div>
-                            <div class="category-s">Розробка дизайну під вашу ЦА</div>
-                            <div class="category-s">Тестування зручності</div>
+                            <div class="category-s" data-lang-ua="Адаптивний дизайн моб. пристроїв"
+                                data-lang-pl="Responsywny projekt mobilny">Адаптивний дизайн моб. пристроїв</div>
+                            <div class="category-s" data-lang-ua="Розробка дизайну під вашу ЦА"
+                                data-lang-pl="Projektowanie pod Twoją grupę docelową">Розробка дизайну під вашу ЦА</div>
+                            <div class="category-s" data-lang-ua="Тестування зручності"
+                                data-lang-pl="Testowanie użyteczności">Тестування зручності</div>
                         </div>
-
                     </div>
-
-                    <div class="cta-container-s">
+                    <div class="cta-container-s cta-btn">
                         <div class="cta-s">
                             <div class="cta-icons-s">
                                 <div class="icon-s-s"></div>
                                 <div class="icon-b-s"></div>
                             </div>
-                            <span class="cta-text-s">ОТРИМАТИ БЕЗКОШТОВНУ ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ</span>
+                            <span class="cta-text-s" data-lang-ua="ОТРИМАТИ БЕЗКОШТОВНУ ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ"
+                                data-lang-pl="UZYSKAĆ BEZPŁATNĄ WIZUALIZACJĘ TWOJEJ STRONY">ОТРИМАТИ БЕЗКОШТОВНУ
+                                ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ</span>
                             <div class="cta-line-s"></div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
+            <!-- ТЕХНІЧНА РОЗРОБКА -->
             <div class="seven-container card">
                 <div class="content">
                     <div class="text-content-five">
-                        <h3 class="title-five">ТЕХНІЧНА<br>РОЗРОБКА</h3>
-                        <p class="description-five">
+                        <h3 class="title-five" data-lang-ua="ТЕХНІЧНА РОЗРОБКА" data-lang-pl="ROZWÓJ TECHNICZNY">
+                            ТЕХНІЧНА<br>РОЗРОБКА</h3>
+                        <p class="description-five"
+                            data-lang-ua="Ми забезпечуємо технічну частину вашого сайту, щоб він працював бездоганно:"
+                            data-lang-pl="Zapewniamy techniczną stronę Twojej strony, aby działała bezbłędnie:">
                             Ми забезпечуємо технічну частину вашого сайту, щоб він працював бездоганно:
-
                         </p>
                         <div class="categories">
-                            <div class="category">Верстка</div>
-                            <div class="category">Інтеграція з CMS (Webflow, Weblium)</div>
-                            <div class="category">Оптимізація швидкості завантаження</div>
-                            <div class="category">CRM та платежі</div>
+                            <div class="category" data-lang-ua="Верстка" data-lang-pl="Kodowanie">Верстка</div>
+                            <div class="category" data-lang-ua="Інтеграція з CMS (Webflow, Weblium)"
+                                data-lang-pl="Integracja z CMS (Webflow, Weblium)">Інтеграція з CMS (Webflow, Weblium)
+                            </div>
+                            <div class="category" data-lang-ua="Оптимізація швидкості завантаження"
+                                data-lang-pl="Optymalizacja prędkości ładowania">Оптимізація швидкості завантаження
+                            </div>
+                            <div class="category" data-lang-ua="CRM та платежі" data-lang-pl="CRM i płatności">CRM та
+                                платежі</div>
                         </div>
                     </div>
-                    <div class="cta-container">
+                    <div class="cta-container cta-btn">
                         <div class="cta">
                             <div class="cta-icons">
                                 <div class="icon-s"></div>
                                 <div class="icon-b"></div>
                             </div>
-                            <span class="cta-text">ОТРИМАТИ БЕЗКОШТОВНУ ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ</span>
+                            <span class="cta-text" data-lang-ua="ОТРИМАТИ БЕЗКОШТОВНУ ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ"
+                                data-lang-pl="UZYSKAĆ BEZPŁATNĄ WIZUALIZACJĘ TWOJEJ STRONY">ОТРИМАТИ БЕЗКОШТОВНУ
+                                ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ</span>
                             <div class="cta-line"></div>
                         </div>
                     </div>
                 </div>
                 <div class="image-container">
-
                     <img src="./images/1.png" alt="3D Object" class="image" width="600" height="600">
                 </div>
             </div>
 
-
+            <!-- ТАРГЕТОВАНА РЕКЛАМА -->
             <div class="eight-container card">
-
                 <div class="image-container-s">
-
                     <img src="./images/5.png" alt="3D Object" class="image-s_" width="800" height="800">
                 </div>
-
-
                 <div class="content">
                     <div class="text-content-six">
-                        <h3 class="title-six">ТАРГЕТОВАНА<br>РЕКЛАМА</h3>
-                        <p class="description-six">
+                        <h3 class="title-six" data-lang-ua="ТАРГЕТОВАНА РЕКЛАМА" data-lang-pl="REKLAMA DOCIELOWANA">
+                            ТАРГЕТОВАНА<br>РЕКЛАМА</h3>
+                        <p class="description-six"
+                            data-lang-ua="Ми налаштовуємо ефективну рекламу, щоб вона приносила результати:"
+                            data-lang-pl="Konfigurujemy skuteczną reklamę, aby przynosiła wyniki:">
                             Ми налаштовуємо ефективну рекламу, щоб вона приносила результати:
                         </p>
                         <div class="categories-six">
-                            <div class="category-s">Відстеження результатів і коригування</div>
-                            <div class="category-s">Аналіз і вибір аудиторії</div>
-                            <div class="category-s">Створення рекламних креативів</div>
-                            <div class="category-s">Оптимізація кампаній під бюджет</div>
+                            <div class="category-s" data-lang-ua="Відстеження результатів і коригування"
+                                data-lang-pl="Śledzenie wyników i korekta">Відстеження результатів і коригування</div>
+                            <div class="category-s" data-lang-ua="Аналіз і вибір аудиторії"
+                                data-lang-pl="Analiza i wybór grupy docelowej">Аналіз і вибір аудиторії</div>
+                            <div class="category-s" data-lang-ua="Створення рекламних креативів"
+                                data-lang-pl="Tworzenie kreacji reklamowych">Створення рекламних креативів</div>
+                            <div class="category-s" data-lang-ua="Оптимізація кампаній під бюджет"
+                                data-lang-pl="Optymalizacja kampanii pod budżet">Оптимізація кампаній під бюджет</div>
                         </div>
-
                     </div>
-
-                    <div class="cta-container_s">
+                    <div class="cta-container_s cta-btn">
                         <div class="cta-s">
                             <div class="cta-icons-s">
                                 <div class="icon-s-s"></div>
                                 <div class="icon-b-s"></div>
                             </div>
-                            <span class="cta-text-s">ОТРИМАТИ БЕЗКОШТОВНУ ДІАГНОСТИКУ І КОНСУЛЬТАЦІЮ</span>
+                            <span class="cta-text-s" data-lang-ua="ОТРИМАТИ БЕЗКОШТОВНУ ДІАГНОСТИКУ І КОНСУЛЬТАЦІЮ"
+                                data-lang-pl="UZYSKAĆ BEZPŁATNĄ DIAGNOSTYKĘ I KONSULTACJĘ">ОТРИМАТИ БЕЗКОШТОВНУ
+                                ДІАГНОСТИКУ І КОНСУЛЬТАЦІЮ</span>
                             <div class="cta-line-s"></div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
+            <!-- ЕФЕКТИВНИЙ SMM -->
             <div class="nine-container card">
                 <div class="content">
                     <div class="text-content-nine">
-                        <h3 class="title-five">ЕФЕКТИВНИЙ<br>SMM</h3>
-                        <p class="description-five">
+                        <h3 class="title-five" data-lang-ua="ЕФЕКТИВНИЙ SMM" data-lang-pl="SKUTECZNY SMM">
+                            ЕФЕКТИВНИЙ<br>SMM</h3>
+                        <p class="description-five"
+                            data-lang-ua="Ми створюємо ідеальний образ вашого бренду в соцмережах:"
+                            data-lang-pl="Tworzymy idealny wizerunek Twojej marki w mediach społecznościowych:">
                             Ми створюємо ідеальний образ вашого бренду в соцмережах:
                         </p>
                         <div class="categories">
-                            <div class="category">Створення візуального та текстового контенту</div>
-                            <div class="category">Планування публікацій та сторіз</div>
-                            <div class="category">Розробка контент-стратегії</div>
-
+                            <div class="category" data-lang-ua="Створення візуального та текстового контенту"
+                                data-lang-pl="Tworzenie treści wizualnych i tekstowych">Створення візуального та
+                                текстового контенту</div>
+                            <div class="category" data-lang-ua="Планування публікацій та сторіз"
+                                data-lang-pl="Planowanie publikacji i stories">Планування публікацій та сторіз</div>
+                            <div class="category" data-lang-ua="Розробка контент-стратегії"
+                                data-lang-pl="Tworzenie strategii treści">Розробка контент-стратегії</div>
                         </div>
                     </div>
-                    <div class="cta-container-nine">
+                    <div class="cta-container-nine cta-btn">
                         <div class="cta-s">
                             <div class="cta-icons-s">
                                 <div class="icon-s-s"></div>
                                 <div class="icon-b-s"></div>
                             </div>
-                            <span class="cta-text-s">ОТРИМАТИ БЕЗКОШТОВНУ ДІАГНОСТИКУ І КОНСУЛЬТАЦІЮ</span>
+                            <span class="cta-text-s" data-lang-ua="ОТРИМАТИ БЕЗКОШТОВНУ ДІАГНОСТИКУ І КОНСУЛЬТАЦІЮ"
+                                data-lang-pl="UZYSKAĆ BEZPŁATNĄ DIAGNOSTYKĘ I KONSULTACJĘ">ОТРИМАТИ БЕЗКОШТОВНУ
+                                ДІАГНОСТИКУ І КОНСУЛЬТАЦІЮ</span>
                             <div class="cta-line-s"></div>
                         </div>
                     </div>
                 </div>
                 <div class="image-container">
-
                     <img src="./images/1.png" alt="3D Object" class="image" width="600" height="600">
                 </div>
             </div>
-
         </div>
+
 
 
 
@@ -304,14 +341,17 @@
         <!--текст-->
 
         <div class="text-content container" id="cases">
-            <p class="subtext">
+            <p class="subtext"
+                data-lang-ua="наші ідеї виходять поза межі звичного, щоб дарувати унікальні рішення для кожного."
+                data-lang-pl="nasze pomysły wychodzą poza schematy, aby zapewniać unikalne rozwiązania dla każdego.">
                 наші ідеї виходять поза межі звичного, щоб дарувати унікальні рішення для кожного.
             </p>
             <div class="main-title">
-                <h2 class="one">НАШІ</h2>
-                <h2 class="two">КЕЙСИ</h2>
+                <h2 class="one" data-lang-ua="НАШІ" data-lang-pl="NASZE">НАШІ</h2>
+                <h2 class="two" data-lang-ua="КЕЙСИ" data-lang-pl="PRZYKŁADY">КЕЙСИ</h2>
             </div>
-            <p class="description">
+            <p class="description" data-lang-ua="кожен наш проєкт — це симбіоз аналітики, стратегії та творчості."
+                data-lang-pl="każdy nasz projekt to połączenie analizy, strategii i kreatywności.">
                 кожен наш проєкт — це симбіоз аналітики, стратегії та творчості.
             </p>
         </div>
@@ -335,7 +375,7 @@
                             <div class="rectangle_one_"></div>
                             <div class="rectangle_two_"></div>
                         </div>
-                        <div class="btn-txt-case">ДЕТАЛІ</div>
+                        <div class="btn-txt-case" data-lang-ua="ДЕТАЛІ" data-lang-pl="SZCZEGÓŁY">ДЕТАЛІ</div>
                         <div class="line_"></div>
                     </div>
                 </div>
@@ -356,7 +396,7 @@
                             <div class="rectangle_one_"></div>
                             <div class="rectangle_two_"></div>
                         </div>
-                        <div class="btn-txt-case">ДЕТАЛІ</div>
+                        <div class="btn-txt-case" data-lang-ua="ДЕТАЛІ" data-lang-pl="SZCZEGÓŁY">ДЕТАЛІ</div>
                         <div class="line_"></div>
                     </div>
                 </div>
@@ -380,7 +420,7 @@
                             <div class="rectangle_one_"></div>
                             <div class="rectangle_two_"></div>
                         </div>
-                        <div class="btn-txt-case">ДЕТАЛІ</div>
+                        <div class="btn-txt-case" data-lang-ua="ДЕТАЛІ" data-lang-pl="SZCZEGÓŁY">ДЕТАЛІ</div>
                         <div class="line_"></div>
                     </div>
                 </div>
@@ -401,7 +441,7 @@
                             <div class="rectangle_one_"></div>
                             <div class="rectangle_two_"></div>
                         </div>
-                        <div class="btn-txt-case">ДЕТАЛІ</div>
+                        <div class="btn-txt-case" data-lang-ua="ДЕТАЛІ" data-lang-pl="SZCZEGÓŁY">ДЕТАЛІ</div>
                         <div class="line_"></div>
                     </div>
                 </div>
@@ -426,7 +466,7 @@
                             <div class="rectangle_one_"></div>
                             <div class="rectangle_two_"></div>
                         </div>
-                        <div class="btn-txt-case">ДЕТАЛІ</div>
+                        <div class="btn-txt-case" data-lang-ua="ДЕТАЛІ" data-lang-pl="SZCZEGÓŁY">ДЕТАЛІ</div>
                         <div class="line_"></div>
                     </div>
                 </div>
@@ -447,7 +487,7 @@
                             <div class="rectangle_one_"></div>
                             <div class="rectangle_two_"></div>
                         </div>
-                        <div class="btn-txt-case">ДЕТАЛІ</div>
+                        <div class="btn-txt-case" data-lang-ua="ДЕТАЛІ" data-lang-pl="SZCZEGÓŁY">ДЕТАЛІ</div>
                         <div class="line_"></div>
                     </div>
                 </div>
@@ -459,9 +499,9 @@
         <div class="four-container" id="why-us">
             <div class="four-cont">
                 <div class="main-title-two">
-                    <h2 class="four">ЧОМУ</h2>
-                    <h2 class="five">ОБИРАЮТЬ</h2>
-                    <h2 class="six">НАС</h2>
+                    <h2 class="four" data-lang-ua="ЧОМУ" data-lang-pl="DLACZEGO">ЧОМУ</h2>
+                    <h2 class="five" data-lang-ua="ОБИРАЮТЬ" data-lang-pl="WYBIERAJĄ">ОБИРАЮТЬ</h2>
+                    <h2 class="six" data-lang-ua="НАС" data-lang-pl="NAS">НАС</h2>
                 </div>
 
                 <div class="list-section">
@@ -474,14 +514,15 @@
                                     <div class="icon-small"></div>
                                     <div class="icon-big"></div>
                                 </div>
-                                <h3 class="list-title">Індивідуальний підхід</h3>
+                                <h3 class="list-title" data-lang-ua="Індивідуальний підхід"
+                                    data-lang-pl="Indywidualne podejście">Індивідуальний підхід</h3>
                             </div>
-                            <p class="list-txt">
+                            <p class="list-txt"
+                                data-lang-ua="Кожен проект для нас — це нова історія. Ми вникаємо в суть вашого бізнесу, щоб створити рішення, яке справді працює."
+                                data-lang-pl="Każdy projekt to dla nas nowa historia. Zgłębiamy istotę Twojego biznesu, aby stworzyć rozwiązanie, które naprawdę działa.">
                                 Кожен проект для нас — це нова історія. Ми вникаємо в суть вашого бізнесу, щоб створити
-                                рішення,
-                                яке справді працює.
+                                рішення, яке справді працює.
                             </p>
-
                         </div>
                         <div class="list-line"></div>
                     </div>
@@ -494,13 +535,15 @@
                                     <div class="icon-small"></div>
                                     <div class="icon-big"></div>
                                 </div>
-                                <h3 class="list-title">Креативність на максимумі </h3>
+                                <h3 class="list-title" data-lang-ua="Креативність на максимумі"
+                                    data-lang-pl="Kreatywność na maksa">Креативність на максимумі</h3>
                             </div>
-                            <p class="list-txt">
+                            <p class="list-txt"
+                                data-lang-ua="Ми віримо, що оригінальний дизайн і сучасні технології здатні змінювати уявлення про бренд.Наші ідеї виходять за рамки стандартів."
+                                data-lang-pl="Wierzymy, że oryginalny design i nowoczesne technologie mogą zmieniać postrzeganie marki. Nasze pomysły wykraczają poza standardy.">
                                 Ми віримо, що оригінальний дизайн і сучасні технології здатні змінювати уявлення про
                                 бренд.Наші ідеї виходять за рамки стандартів.
                             </p>
-
                         </div>
                         <div class="list-line"></div>
                     </div>
@@ -513,13 +556,15 @@
                                     <div class="icon-small"></div>
                                     <div class="icon-big"></div>
                                 </div>
-                                <h3 class="list-title">Цифрові інновації</h3>
+                                <h3 class="list-title" data-lang-ua="Цифрові інновації"
+                                    data-lang-pl="Cyfrowe innowacje">Цифрові інновації</h3>
                             </div>
-                            <p class="list-txt">
+                            <p class="list-txt"
+                                data-lang-ua="Ми не просто йдемо в ногу з часом — ми задаємо темп. Наші проєкти базуються на передових технологіях, що забезпечують вам перевагу на ринку."
+                                data-lang-pl="Nie tylko nadążamy za czasem – wyznaczamy tempo. Nasze projekty opierają się na zaawansowanych technologiach, które dają Ci przewagę na rynku.">
                                 Ми не просто йдемо в ногу з часом — ми задаємо темп. Наші проєкти базуються на передових
                                 технологіях, що забезпечують вам перевагу на ринку.
                             </p>
-
                         </div>
                         <div class="list-line"></div>
                     </div>
@@ -532,44 +577,53 @@
                                     <div class="icon-small"></div>
                                     <div class="icon-big"></div>
                                 </div>
-                                <h3 class="list-title">Результат понад усе</h3>
+                                <h3 class="list-title" data-lang-ua="Результат понад усе"
+                                    data-lang-pl="Wynik ponad wszystko">Результат понад усе</h3>
                             </div>
-                            <p class="list-txt">
+                            <p class="list-txt"
+                                data-lang-ua="Наша мета — не просто красивий дизайн чи стильний сайт, а інструмент, який приносить реальну користь вашому бізнесу."
+                                data-lang-pl="Naszym celem nie jest tylko piękny design czy stylowa strona, ale narzędzie, które przynosi realne korzyści dla Twojego biznesu.">
                                 Наша мета — не просто красивий дизайн чи стильний сайт, а інструмент, який приносить
-                                реальну
-                                користь вашому бізнесу.
+                                реальну користь вашому бізнесу.
                             </p>
-
                         </div>
                         <div class="list-line"></div>
                     </div>
 
                 </div>
             </div>
-
-
         </div>
+
 
         <!-------------------БЛОК ФОРМА ЗВ'ЯЗКУ--------------------------->
 
-        <div class="form">
+        <div class="form" id="form-section">
             <div class="form-content">
-                <h4 class="title-form">ЗВ'ЯЖІТЬСЯ ЗІ МНОЮ</h4>
+                <h4 class="title-form" data-lang-ua="ЗВ'ЯЖІТЬСЯ ЗІ МНОЮ" data-lang-pl="SKONTAKTUJ SIĘ ZE MNĄ">ЗВ'ЯЖІТЬСЯ
+                    ЗІ МНОЮ</h4>
                 <div class="btn-form">
-                    <button class="btn-form-" data-type="telegram">TELEGRAM</button>
-                    <button class="btn-form-" data-type="instagram">INSTAGRAM</button>
-                    <button class="btn-form-" data-type="phone">ТЕЛЕФОН</button>
-                    <button class="btn-form-" data-type="email">EMAIL</button>
+                    <button class="btn-form-" data-type="telegram" data-lang-ua="TELEGRAM"
+                        data-lang-pl="TELEGRAM">TELEGRAM</button>
+                    <button class="btn-form-" data-type="instagram" data-lang-ua="INSTAGRAM"
+                        data-lang-pl="INSTAGRAM">INSTAGRAM</button>
+                    <button class="btn-form-" data-type="phone" data-lang-ua="ТЕЛЕФОН"
+                        data-lang-pl="TELEFON">ТЕЛЕФОН</button>
+                    <button class="btn-form-" data-type="email" data-lang-ua="EMAIL" data-lang-pl="EMAIL">EMAIL</button>
                 </div>
             </div>
             <div class="input-section hidden">
-                <input type="text" id="input-field" placeholder="ваш нік в соц мережі або номер телефону">
+                <input type="text" id="input-field" placeholder="ваш нік в соц мережі або номер телефону"
+                    data-lang-ua="ваш нік в соц мережі або номер телефону"
+                    data-lang-pl="Twój nick w mediach społecznościowych lub numer telefonu">
             </div>
             <div class="checkbox-btn">
                 <div class="checkbox-section">
                     <input type="checkbox" id="agree">
-                    <label for="agree">відправляючи форму, ви погоджуєтесь з політикою обробки персональних
-                        данних</label>
+                    <label for="agree"
+                        data-lang-ua="відправляючи форму, ви погоджуєтесь з політикою обробки персональних данних"
+                        data-lang-pl="wysyłając formularz, zgadzasz się z polityką przetwarzania danych osobowych">
+                        відправляючи форму, ви погоджуєтесь з політикою обробки персональних данних
+                    </label>
                 </div>
 
                 <div class="button-form">
@@ -578,13 +632,14 @@
                             <div class="rectangle_one-form"></div>
                             <div class="rectangle_two-form"></div>
                         </div>
-                        <div class="btn-txt-form">ЗАЛИШИТИ ЗАЯВКУ</div>
+                        <div class="btn-txt-form" data-lang-ua="ЗАЛИШИТИ ЗАЯВКУ" data-lang-pl="ZŁÓŻ WNIOSEK">ЗАЛИШИТИ
+                            ЗАЯВКУ</div>
                         <div class="line-form"></div>
                     </div>
                 </div>
-
             </div>
         </div>
+
     </main>
 
     <!-------------------БЛОК ФУТЕР-------------------------->
@@ -596,46 +651,44 @@
                     <use href="./images/icon.svg#icon-logo"></use>
                 </svg>
             </a>
-            <div class="email-address">
-                svsdigitalagency@gmail.com
-            </div>
+            <div class="email-address">svsdigitalagency@gmail.com</div>
         </div>
 
-
         <div class="nav-btn">
-
             <ul class="nav-list list">
                 <li class="nav-item list">
-                    <a class="nav-link  link" href="">ПРО НАС</a>
+                    <a class="nav-link link" href="#about" data-lang-ua="ПРО НАС" data-lang-pl="O NAS">ПРО НАС</a>
                 </li>
                 <li class="nav-item list">
-                    <a class="nav-link link" href="">НАШІ ПОСЛУГИ</a>
+                    <a class="nav-link link" href="#services" data-lang-ua="НАШІ ПОСЛУГИ"
+                        data-lang-pl="NASZE USŁUGI">НАШІ ПОСЛУГИ</a>
                 </li>
                 <li class="nav-item list">
-                    <a class="nav-link link" href="">НАШІ КЕЙСИ</a>
+                    <a class="nav-link link" href="#cases" data-lang-ua="НАШІ КЕЙСИ" data-lang-pl="NASZE PRZYKŁADY">НАШІ
+                        КЕЙСИ</a>
                 </li>
                 <li class="nav-item list">
-                    <a class="nav-link link" href="">ЧОМУ МИ?</a>
+                    <a class="nav-link link" href="#why-us" data-lang-ua="ЧОМУ МИ?" data-lang-pl="DLACZEGO MY?">ЧОМУ
+                        МИ?</a>
                 </li>
                 <li class="nav-item language-switch">
-                    <a class="language-link link" href="#">ua</a>
+                    <a class="language-link link active" href="#" data-language="ua">UA</a>
                     <span class="language-divider"></span>
-                    <a class="language-link link" href="#">pl</a>
+                    <a class="language-link link" href="#" data-language="pl">PL</a>
                 </li>
             </ul>
-            <a class="btn-footer link" href="https://www.instagram.com/svs.digital.agency/"
-                target="_blank">INSTAGRAM</a>
-
-
+            <a class="btn-footer link" href="https://www.instagram.com/svs.digital.agency/" target="_blank"
+                data-lang-ua="INSTAGRAM" data-lang-pl="INSTAGRAM">INSTAGRAM</a>
         </div>
 
         <div class="footer-txt">
             <p class="footer_txt">© 2024</p>
             <p class="footer_txt">SVS Digital Agency.</p>
-            <p class="footer_txt">Політика конфіденційності</p>
+            <p class="footer_txt" data-lang-ua="Політика конфіденційності" data-lang-pl="Polityka prywatności">Політика
+                конфіденційності</p>
         </div>
-
     </footer>
+
 
 
 
@@ -770,13 +823,77 @@
             const chatId = "-4622893501"; // Ваш chat_id
 
             let currentType = ""; // Текущий тип контакта
+            let currentLanguage = "ua"; // Язык по умолчанию
+
+            // Обновление языка через кнопки
+            document.querySelectorAll(".language-link").forEach((link) => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    currentLanguage = link.getAttribute("data-language");
+                    document.querySelectorAll(".language-link").forEach((l) => l.classList.remove("active"));
+                    link.classList.add("active");
+                    updatePlaceholders();
+                });
+            });
+
+            // Тексты уведомлений для разных языков
+            const messages = {
+                ua: {
+                    emptyField: "Будь ласка, заповніть поле вводу!",
+                    noAgreement: "Погодьтесь з політикою обробки персональних даних.",
+                    success: "Дані успішно відправлено!",
+                    error: "Помилка при відправці: ",
+                    networkError: "Не вдалося з'єднатися з Telegram. Перевірте мережу.",
+                    placeholders: {
+                        telegram: "Ваш нік у Telegram",
+                        instagram: "Ваш нік в Instagram",
+                        phone: "Ваш номер телефону",
+                        email: "Ваш Email",
+                        default: "ваш нік в соц мережі або номер телефону"
+                    }
+                },
+                pl: {
+                    emptyField: "Proszę wypełnić pole wejściowe!",
+                    noAgreement: "Zgódź się na politykę przetwarzania danych osobowych.",
+                    success: "Dane zostały pomyślnie wysłane!",
+                    error: "Błąd podczas wysyłania: ",
+                    networkError: "Nie udało się połączyć z Telegramem. Sprawdź sieć.",
+                    placeholders: {
+                        telegram: "Twój nick na Telegramie",
+                        instagram: "Twój nick na Instagramie",
+                        phone: "Twój numer telefonu",
+                        email: "Twój Email",
+                        default: "Twój nick lub numer telefonu"
+                    }
+                }
+            };
+
+            // Функция для обновления плейсхолдера
+            function updatePlaceholders() {
+                switch (currentType) {
+                    case "telegram":
+                        inputField.placeholder = messages[currentLanguage].placeholders.telegram;
+                        break;
+                    case "instagram":
+                        inputField.placeholder = messages[currentLanguage].placeholders.instagram;
+                        break;
+                    case "phone":
+                        inputField.placeholder = messages[currentLanguage].placeholders.phone;
+                        break;
+                    case "email":
+                        inputField.placeholder = messages[currentLanguage].placeholders.email;
+                        break;
+                    default:
+                        inputField.placeholder = messages[currentLanguage].placeholders.default;
+                }
+            }
 
             // Функция для отображения уведомлений
-            function showNotification(message) {
+            function showNotification(messageKey) {
+                const message = messages[currentLanguage][messageKey] || messageKey;
                 notification.textContent = message;
                 notification.classList.remove("hidden");
 
-                // Через 3 секунды скрыть уведомление
                 setTimeout(() => {
                     notification.classList.add("hidden");
                 }, 3000);
@@ -787,23 +904,7 @@
                 button.addEventListener("click", () => {
                     inputSection.classList.remove("hidden");
                     currentType = button.getAttribute("data-type");
-
-                    switch (currentType) {
-                        case "telegram":
-                            inputField.placeholder = "Ваш нік у Telegram";
-                            break;
-                        case "instagram":
-                            inputField.placeholder = "Ваш нік в Instagram";
-                            break;
-                        case "phone":
-                            inputField.placeholder = "Ваш номер телефону";
-                            break;
-                        case "email":
-                            inputField.placeholder = "Ваш Email";
-                            break;
-                        default:
-                            inputField.placeholder = "ваш нік в соц мережі або номер телефону";
-                    }
+                    updatePlaceholders();
                 });
             });
 
@@ -812,12 +913,12 @@
                 const userInput = inputField.value.trim();
 
                 if (!userInput) {
-                    showNotification("Будь ласка, заповніть поле вводу!");
+                    showNotification("emptyField");
                     return;
                 }
 
                 if (!checkbox.checked) {
-                    showNotification("Погодьтесь з політикою обробки персональних даних.");
+                    showNotification("noAgreement");
                     return;
                 }
 
@@ -836,24 +937,194 @@
                     const result = await response.json();
 
                     if (response.ok && result.ok) {
-                        showNotification("Дані успішно відправлено!");
-                        inputField.value = ""; // Очистка поля ввода
-                        inputSection.classList.add("hidden"); // Скрыть поле
-                        checkbox.checked = false; // Сброс чекбокса
+                        showNotification("success");
+                        inputField.value = "";
+                        inputSection.classList.add("hidden");
+                        checkbox.checked = false;
                     } else {
                         console.error("Ошибка при отправке данных:", result.description);
-                        showNotification("Помилка при відправці: " + result.description);
+                        showNotification("error" + result.description);
                     }
                 } catch (error) {
                     console.error("Ошибка отправки данных:", error);
-                    showNotification("Не вдалося з'єднатися з Telegram. Перевірте мережу.");
+                    showNotification("networkError");
                 }
+            });
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll('a[href^="#"]'); // Все ссылки-якоря
+
+            links.forEach(link => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault(); // Предотвращаем стандартное действие
+
+                    const targetId = link.getAttribute("href").substring(1); // Получаем ID цели
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: "smooth" // Плавная прокрутка
+                        });
+                    }
+                });
+            });
+        });
+
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault(); // Останавливаем стандартное поведение
+
+                    // Удаляем класс active у всех ссылок
+                    navLinks.forEach(item => item.classList.remove('active'));
+
+                    // Добавляем класс active только на текущую ссылку
+                    this.classList.add('active');
+
+                    // Прокрутка к целевому блоку
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - 50, // С учетом фиксированной шапки
+                            behavior: 'smooth'
+                        });
+
+                        // После завершения прокрутки удаляем класс active
+                        setTimeout(() => {
+                            this.classList.remove('active');
+                        }, 800); // 800ms соответствует времени прокрутки
+                    }
+                });
             });
         });
 
 
 
+
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const btnFooter = document.querySelector('.btn-footer');
+
+            btnFooter.addEventListener('click', (event) => {
+                event.preventDefault(); // Предотвращаем стандартное поведение
+
+                // Устанавливаем белый цвет текста и границы перед открытием ссылки
+                btnFooter.style.color = '#fefefe';
+                btnFooter.style.borderColor = '#fefefe';
+
+                // Открываем ссылку
+                window.open('https://www.instagram.com/svs.digital.agency/', '_blank');
+
+                // Через небольшую задержку сбрасываем состояние кнопки
+                setTimeout(() => {
+                    btnFooter.style.color = '#fefefe';
+                    btnFooter.style.borderColor = '#fefefe';
+                }, 100);
+            });
+        });
+
+
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const ctaButtons = document.querySelectorAll('.cta-btn'); // Находим все кнопки
+            const formSection = document.getElementById('form-section'); // Блок формы
+
+            // Функция для плавной прокрутки к форме
+            const scrollToForm = () => {
+                formSection.scrollIntoView({
+                    behavior: "smooth", // Плавная прокрутка
+                    block: "start"      // Прокрутка к началу формы
+                });
+            };
+
+            // Добавляем обработчик событий для всех кнопок
+            ctaButtons.forEach(button => {
+                button.addEventListener("click", scrollToForm);
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Получаем все элементы переключения языка
+            const languageLinks = document.querySelectorAll(".language-link");
+
+            // Добавляем обработчик событий для каждого переключателя
+            languageLinks.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const selectedLanguage = this.dataset.language; // "ua" или "pl"
+
+                    // Проходим по всем элементам с атрибутами data-lang
+                    document.querySelectorAll("[data-lang-ua], [data-lang-pl]").forEach(element => {
+                        if (selectedLanguage === "ua") {
+                            element.textContent = element.dataset.langUa; // Текст для украинского
+                        } else if (selectedLanguage === "pl") {
+                            element.textContent = element.dataset.langPl; // Текст для польского
+                        }
+                    });
+
+                    // Обновляем активный стиль для выбранного языка
+                    languageLinks.forEach(link => link.classList.remove("active"));
+                    this.classList.add("active");
+                });
+            });
+        });
+    </script>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const languageLinks = document.querySelectorAll(".language-link");
+            const body = document.body;
+
+            languageLinks.forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault(); // Предотвращаем переход по ссылке
+                    const selectedLanguage = this.getAttribute("data-language");
+
+                    // Удаляем текущие классы языка и добавляем новый
+                    body.classList.remove("lang-ua", "lang-pl");
+                    body.classList.add(`lang-${selectedLanguage}`);
+
+                    // Добавляем активный класс к выбранному языку
+                    languageLinks.forEach(l => l.classList.remove("active"));
+                    this.classList.add("active");
+
+                    // Обновляем текст на нужный язык
+                    updateLanguageContent(selectedLanguage);
+                });
+            });
+
+            // Функция для обновления текста на странице
+            function updateLanguageContent(lang) {
+                document.querySelectorAll("[data-lang-ua], [data-lang-pl]").forEach(element => {
+                    if (lang === "ua") {
+                        element.textContent = element.getAttribute("data-lang-ua");
+                    } else if (lang === "pl") {
+                        element.textContent = element.getAttribute("data-lang-pl");
+                    }
+                });
+            }
+        });
+    </script>
+
 
 </body>
 
