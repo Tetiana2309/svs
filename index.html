@@ -31,15 +31,14 @@
     <!-------------------ХЕДЕР--------------------------->
 
     <header>
-        <div class="container page-header-container">
+        <div class="container">
             <nav class="menu-page-nav">
                 <a class="logo-link link">
-                    <svg class="icon" width="154" height="124">
+                    <svg class="icon">
                         <use href="./images/icon.svg#icon-logo"></use>
                     </svg>
                 </a>
 
-                <!-- бургер меню -->
                 <div class="burger-menu">
                     <div></div>
                     <div></div>
@@ -62,13 +61,14 @@
                         <a class="nav-link link" href="#why-us" data-lang-ua="ЧОМУ МИ?" data-lang-pl="DLACZEGO MY?">ЧОМУ
                             МИ?</a>
                     </li>
-                    <li class="nav-item language-switch">
-                        <a class="language-link link active" href="#" data-language="ua">UA</a>
-                        <span class="language-divider"></span>
-                        <a class="language-link link" href="#" data-language="pl">PL</a>
-                    </li>
+
                 </ul>
 
+                <div class="language-switch">
+                    <a class="language-link link active" href="#" data-language="ua">UA</a>
+                    <span class="language-divider"></span>
+                    <a class="language-link link" href="#" data-language="pl">PL</a>
+                </div>
                 <div class="button cta-btn">
                     <div class="button-content">
                         <div class="rectangles">
@@ -140,9 +140,10 @@
         <!------------------- БЛОК НАШІ ПОСЛУГИ--------------------------->
 
         <div class="parallax-container" id="services">
+
             <!-- РОЗРОБКА САЙТІВ -->
             <div class="five-container card">
-                <div class="content">
+                <div class="content-">
                     <div class="text-content-five">
                         <h3 class="title-five" data-lang-ua="РОЗРОБКА САЙТІВ" data-lang-pl="TWORZENIE STRON">
                             РОЗРОБКА<br>САЙТІВ</h3>
@@ -170,26 +171,28 @@
                                 <div class="icon-s"></div>
                                 <div class="icon-b"></div>
                             </div>
-                            <span class="cta-text" data-lang-ua="ОТРИМАТИ БЕЗКОШТОВНУ ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ"
-                                data-lang-pl="UZYSKAĆ BEZPŁATNĄ WIZUALIZACJĘ TWOJEJ STRONY">ОТРИМАТИ БЕЗКОШТОВНУ
-                                ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ</span>
+                            <span class="cta-text" data-lang-ua="ПОЧНІМО СПІВПРАЦЮ"
+                                data-lang-pl="ROZPOCZNIJMY WSPÓŁPRACĘ">
+                                ПОЧНІМО
+                                СПІВПРАЦЮ</span>
                             <div class="cta-line"></div>
                         </div>
                     </div>
+
                 </div>
                 <div class="image-container">
-                    <img src="./images/1.png" alt="3D Object" class="image" width="600" height="600">
+                    <img src="./images/1.png" alt="3D Object" class="image-one">
                 </div>
             </div>
 
             <!-- UX/UI ДИЗАЙН -->
             <div class="six-container card">
-                <div class="image-container-s">
-                    <img src="./images/5.png" alt="3D Object" class="image-s" width="600" height="600">
+                <div class="image-container">
+                    <img src="./images/1.png" alt="3D Object" class="image-two">
                 </div>
                 <div class="content">
                     <div class="text-content-six">
-                        <h3 class="title-six" data-lang-ua="UX/UI ДИЗАЙН" data-lang-pl="UX/UI PROJEKTOWANIE">
+                        <h3 class="title-six" data-lang-ua="UX/UI ДИЗАЙН" data-lang-pl="UX/UI PROJEKT">
                             UX/UI<br>ДИЗАЙН</h3>
                         <p class="description-six"
                             data-lang-ua="Проектуємо інтерфейси, які зручні, зрозумілі та ефективні для користувачів:"
@@ -212,18 +215,20 @@
                                 <div class="icon-s-s"></div>
                                 <div class="icon-b-s"></div>
                             </div>
-                            <span class="cta-text-s" data-lang-ua="ОТРИМАТИ БЕЗКОШТОВНУ ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ"
-                                data-lang-pl="UZYSKAĆ BEZPŁATNĄ WIZUALIZACJĘ TWOJEJ STRONY">ОТРИМАТИ БЕЗКОШТОВНУ
-                                ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ</span>
+                            <span class="cta-text-s" data-lang-ua="ПОЧНІМО СПІВПРАЦЮ"
+                                data-lang-pl="ROZPOCZNIJMY WSPÓŁPRACĘ">
+                                ПОЧНІМО
+                                СПІВПРАЦЮ</span>
                             <div class="cta-line-s"></div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <!-- ТЕХНІЧНА РОЗРОБКА -->
             <div class="seven-container card">
-                <div class="content">
+                <div class="content-">
                     <div class="text-content-five">
                         <h3 class="title-five" data-lang-ua="ТЕХНІЧНА РОЗРОБКА" data-lang-pl="ROZWÓJ TECHNICZNY">
                             ТЕХНІЧНА<br>РОЗРОБКА</h3>
@@ -233,15 +238,15 @@
                             Ми забезпечуємо технічну частину вашого сайту, щоб він працював бездоганно:
                         </p>
                         <div class="categories">
-                            <div class="category" data-lang-ua="Верстка" data-lang-pl="Kodowanie">Верстка</div>
-                            <div class="category" data-lang-ua="Інтеграція з CMS (Webflow, Weblium)"
+                            <div class="category ca" data-lang-ua="Верстка" data-lang-pl="Kodowanie">Верстка</div>
+                            <div class="category ca" data-lang-ua="Інтеграція з CMS (Webflow, Weblium)"
                                 data-lang-pl="Integracja z CMS (Webflow, Weblium)">Інтеграція з CMS (Webflow,
                                 Weblium)
                             </div>
-                            <div class="category" data-lang-ua="Оптимізація швидкості завантаження"
+                            <div class="category ca" data-lang-ua="Оптимізація швидкості завантаження"
                                 data-lang-pl="Optymalizacja prędkości ładowania">Оптимізація швидкості завантаження
                             </div>
-                            <div class="category" data-lang-ua="CRM та платежі" data-lang-pl="CRM i płatności">CRM
+                            <div class="category ca" data-lang-ua="CRM та платежі" data-lang-pl="CRM i płatności">CRM
                                 та
                                 платежі</div>
                         </div>
@@ -252,22 +257,23 @@
                                 <div class="icon-s"></div>
                                 <div class="icon-b"></div>
                             </div>
-                            <span class="cta-text" data-lang-ua="ОТРИМАТИ БЕЗКОШТОВНУ ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ"
-                                data-lang-pl="UZYSKAĆ BEZPŁATNĄ WIZUALIZACJĘ TWOJEJ STRONY">ОТРИМАТИ БЕЗКОШТОВНУ
-                                ВІЗУАЛІЗАЦІЮ ВАШОГО САЙТУ</span>
+                            <span class="cta-text" data-lang-ua="ПОЧНІМО СПІВПРАЦЮ"
+                                data-lang-pl="ROZPOCZNIJMY WSPÓŁPRACĘ">
+                                ПОЧНІМО
+                                СПІВПРАЦЮ</span>
                             <div class="cta-line"></div>
                         </div>
                     </div>
                 </div>
                 <div class="image-container">
-                    <img src="./images/1.png" alt="3D Object" class="image" width="600" height="600">
+                    <img src="./images/1.png" alt="3D Object" class="image-one">
                 </div>
             </div>
 
             <!-- ТАРГЕТОВАНА РЕКЛАМА -->
             <div class="eight-container card">
-                <div class="image-container-s">
-                    <img src="./images/5.png" alt="3D Object" class="image-s_" width="800" height="800">
+                <div class="image-container">
+                    <img src="./images/1.png" alt="3D Object" class="image-two">
                 </div>
                 <div class="content">
                     <div class="text-content-six">
@@ -297,9 +303,10 @@
                                 <div class="icon-s-s"></div>
                                 <div class="icon-b-s"></div>
                             </div>
-                            <span class="cta-text-s" data-lang-ua="ОТРИМАТИ БЕЗКОШТОВНУ ДІАГНОСТИКУ І КОНСУЛЬТАЦІЮ"
-                                data-lang-pl="UZYSKAĆ BEZPŁATNĄ DIAGNOSTYKĘ I KONSULTACJĘ">ОТРИМАТИ БЕЗКОШТОВНУ
-                                ДІАГНОСТИКУ І КОНСУЛЬТАЦІЮ</span>
+                            <span class="cta-text-s" data-lang-ua="ПОЧНІМО СПІВПРАЦЮ"
+                                data-lang-pl="ROZPOCZNIJMY WSPÓŁPRACĘ">
+                                ПОЧНІМО
+                                СПІВПРАЦЮ</span>
                             <div class="cta-line-s"></div>
                         </div>
                     </div>
@@ -308,7 +315,7 @@
 
             <!-- ЕФЕКТИВНИЙ SMM -->
             <div class="nine-container card">
-                <div class="content">
+                <div class="content-">
                     <div class="text-content-nine">
                         <h3 class="title-five" data-lang-ua="ЕФЕКТИВНИЙ SMM" data-lang-pl="SKUTECZNY SMM">
                             ЕФЕКТИВНИЙ<br>SMM</h3>
@@ -333,15 +340,16 @@
                                 <div class="icon-s-s"></div>
                                 <div class="icon-b-s"></div>
                             </div>
-                            <span class="cta-text-s" data-lang-ua="ОТРИМАТИ БЕЗКОШТОВНУ ДІАГНОСТИКУ І КОНСУЛЬТАЦІЮ"
-                                data-lang-pl="UZYSKAĆ BEZPŁATNĄ DIAGNOSTYKĘ I KONSULTACJĘ">ОТРИМАТИ БЕЗКОШТОВНУ
-                                ДІАГНОСТИКУ І КОНСУЛЬТАЦІЮ</span>
+                            <span class="cta-text-s" data-lang-ua="ПОЧНІМО СПІВПРАЦЮ"
+                                data-lang-pl="ROZPOCZNIJMY WSPÓŁPRACĘ">
+                                ПОЧНІМО
+                                СПІВПРАЦЮ</span>
                             <div class="cta-line-s"></div>
                         </div>
                     </div>
                 </div>
                 <div class="image-container">
-                    <img src="./images/1.png" alt="3D Object" class="image" width="600" height="600">
+                    <img src="./images/1.png" alt="3D Object" class="image-one">
                 </div>
             </div>
         </div>
