@@ -1949,6 +1949,12 @@ p {
     transition: border-color 0.3s ease;
 }
 
+.lang-pl .line_ {
+    width: 224px;
+
+}
+
+
 .btn-case:hover .btn-txt-case,
 .btn-case:focus .btn-txt-case {
     color: #b80202;
@@ -1998,45 +2004,55 @@ p {
         text-align: center;
 
         justify-content: center;
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .subtext {
-        display: flex;
+
         padding-left: 0;
         padding-right: 0;
-
-        justify-content: center;
-
         color: #fefefe;
-        text-align: justify;
         font-family: "Namu-Pro", sans-serif;
         font-size: 14px;
         line-height: 130%;
         font-weight: 400;
         text-transform: uppercase;
-
         width: 240px;
-
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .main-title {
         height: 100px;
         width: 240px;
         margin: 20px auto;
-
         display: flex;
-
         flex-direction: column;
-
         justify-content: center;
-
         align-items: center;
-
         text-align: center;
 
     }
 
+    .lang-pl .main-title {
+
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        gap: 0px;
+
+    }
 
     .one {
         color: #fefefe;
@@ -2069,13 +2085,38 @@ p {
 
     }
 
+    .lang-pl .one {
+        color: #fefefe;
+        font-family: "Antonio-SemiBold", sans-serif;
+        margin-bottom: 0;
+        padding: 0;
+        position: static;
+        text-align: center;
+        font-size: 48px;
+        line-height: 120%;
+        font-weight: 600;
+        text-transform: uppercase;
+
+    }
+
+    .lang-pl .two {
+        color: #fefefe;
+        font-family: "Antonio-SemiBold", sans-serif;
+        margin-top: -10px;
+        padding: 0;
+        position: static;
+        text-align: center;
+        font-size: 48px;
+        line-height: 120%;
+        font-weight: 600;
+        text-transform: uppercase;
+
+
+    }
 
     .description {
         padding-left: 0;
         padding-right: 0;
-
-
-
         color: #fefefe;
         text-align: justify;
         font-family: "Namu-Pro", sans-serif;
@@ -2083,28 +2124,25 @@ p {
         line-height: 130%;
         font-weight: 400;
         text-transform: uppercase;
-
         width: 240px;
     }
 
-    /* Общий контейнер кейсов */
+
     .cases {
         padding: 0 16px;
         margin-top: 20px;
     }
 
-    /* Ряды кейсов - каждый кейс занимает 100% */
+
     .cases-row-one,
     .cases-row-two,
     .cases-row-three {
         flex-direction: column;
-
         gap: 24px;
-
         margin-top: 20px;
     }
 
-    /* Кейсы */
+
     .case {
         display: flex;
         flex-direction: column;
@@ -2117,7 +2155,7 @@ p {
 
     }
 
-    /* Контейнер видео с рамкой */
+
     .case-container-one,
     .case-container-two {
         width: 100%;
@@ -2133,7 +2171,7 @@ p {
 
     }
 
-    /* Видео */
+
     .case-content-one,
     .case-content-two {
         width: 240px;
@@ -2142,7 +2180,7 @@ p {
 
     }
 
-    /* Кнопка кейса */
+
     .btn-case {
         margin-top: 26px;
         width: 106px;
@@ -2162,9 +2200,7 @@ p {
 
     .btn-txt-case {
         font-size: 16px;
-
         text-align: center;
-
         color: #fefefe;
         left: 46px;
 
@@ -2173,11 +2209,7 @@ p {
     .rectangles_ {
         display: flex;
         width: 36px;
-        /* Ширина прямоугольников */
         height: 36px;
-        /* Высота прямоугольников */
-
-
     }
 
     .rectangle_one_ {
@@ -2195,12 +2227,15 @@ p {
 
     .line_ {
         width: 106px;
-        /* Линия растягивается на ширину кнопки */
         top: 48px;
         border-style: solid;
         border-color: #b80202;
         border-width: 4px 0 0 0;
 
+    }
+
+    .lang-pl .line_ {
+        width: 148px;
     }
 
 
@@ -2830,10 +2865,7 @@ p {
 
 }
 
-.lang-pl .line_ {
-    width: 224px;
 
-}
 
 .lang-pl .button-form {
     width: 270px;
