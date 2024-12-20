@@ -1717,9 +1717,6 @@ p {
     padding-left: 428px;
     margin-top: 200px;
 
-
-
-
 }
 
 .subtext {
@@ -1738,17 +1735,10 @@ p {
 .main-title {
     height: 263px;
     position: relative;
-
-
-
     display: flex;
     flex-direction: column;
-
     justify-content: center;
-
     align-items: center;
-
-
 }
 
 .one {
@@ -1998,6 +1988,226 @@ p {
     margin-top: 120px;
 
 }
+
+@media (max-width: 768px) {
+
+    .text-content {
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 80px;
+        text-align: center;
+
+        justify-content: center;
+    }
+
+    .subtext {
+        display: flex;
+        padding-left: 0;
+        padding-right: 0;
+
+        justify-content: center;
+
+        color: #fefefe;
+        text-align: justify;
+        font-family: "Namu-Pro", sans-serif;
+        font-size: 14px;
+        line-height: 130%;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        width: 240px;
+
+
+    }
+
+    .main-title {
+        height: 100px;
+        width: 240px;
+        margin: 20px auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        text-align: center;
+
+    }
+
+
+    .one {
+        color: #fefefe;
+        text-align: left;
+        font-family: "Antonio-SemiBold", sans-serif;
+        font-size: 48px;
+        line-height: 120%;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+
+    }
+
+    .two {
+        color: #fefefe;
+        text-align: left;
+        font-family: "Antonio-SemiBold", sans-serif;
+        font-size: 48px;
+        line-height: 120%;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: absolute;
+        left: 70px;
+        top: 40px;
+
+    }
+
+
+    .description {
+        padding-left: 0;
+        padding-right: 0;
+
+
+
+        color: #fefefe;
+        text-align: justify;
+        font-family: "Namu-Pro", sans-serif;
+        font-size: 14px;
+        line-height: 130%;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        width: 240px;
+    }
+
+    /* Общий контейнер кейсов */
+    .cases {
+        padding: 0 16px;
+        margin-top: 20px;
+    }
+
+    /* Ряды кейсов - каждый кейс занимает 100% */
+    .cases-row-one,
+    .cases-row-two,
+    .cases-row-three {
+        flex-direction: column;
+
+        gap: 24px;
+
+        margin-top: 20px;
+    }
+
+    /* Кейсы */
+    .case {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 340px;
+        height: 342px;
+
+    }
+
+    /* Контейнер видео с рамкой */
+    .case-container-one,
+    .case-container-two {
+        width: 100%;
+        max-width: 335px;
+        height: 240px;
+        border: 1px solid #b7b7b7;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(circle, rgba(255, 0, 0, 0.3), transparent);
+
+    }
+
+    /* Видео */
+    .case-content-one,
+    .case-content-two {
+        width: 240px;
+        height: 180px;
+        object-fit: cover;
+
+    }
+
+    /* Кнопка кейса */
+    .btn-case {
+        margin-top: 26px;
+        width: 106px;
+        height: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-cont {
+        width: 106px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-txt-case {
+        font-size: 16px;
+
+        text-align: center;
+
+        color: #fefefe;
+        left: 46px;
+
+    }
+
+    .rectangles_ {
+        display: flex;
+        width: 36px;
+        /* Ширина прямоугольников */
+        height: 36px;
+        /* Высота прямоугольников */
+
+
+    }
+
+    .rectangle_one_ {
+        width: 12px;
+        height: 36px;
+    }
+
+    .rectangle_two_ {
+        width: 20px;
+        height: 36px;
+        left: 14px;
+
+    }
+
+
+    .line_ {
+        width: 106px;
+        /* Линия растягивается на ширину кнопки */
+        top: 48px;
+        border-style: solid;
+        border-color: #b80202;
+        border-width: 4px 0 0 0;
+
+    }
+
+
+
+
+}
+
 
 /*--------------БЛОК ЧОМУ ОБИРАЮТЬ НАС--------------*/
 
