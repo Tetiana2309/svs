@@ -1601,12 +1601,14 @@ p {
 
     .lang-pl .cta-container {
         display: flex;
-
+        margin: 0 auto;
         align-items: center;
         padding: 20px;
         width: 280px;
         height: 66px;
         cursor: pointer;
+        justify-content: flex-end;
+
     }
 
     .lang-pl .cta-container-s {
@@ -1621,7 +1623,7 @@ p {
 
     .lang-pl .cta-container_s {
         display: flex;
-
+        justify-content: flex-end;
         align-items: center;
         padding-top: 20px;
         height: 66px;
