@@ -1539,9 +1539,9 @@ p {
         width: 12px;
         height: 36px;
         background-color: #b80202;
-        /* Основной цвет */
+
         transition: background-color 0.3s ease;
-        /* Плавный переход цвета */
+
     }
 
     .icon-b,
@@ -1549,9 +1549,9 @@ p {
         width: 20px;
         height: 36px;
         background-color: #b80202;
-        /* Основной цвет */
+
         transition: background-color 0.3s ease;
-        /* Плавный переход цвета */
+
     }
 
     /* Текст внутри кнопки */
