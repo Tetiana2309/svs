@@ -93,6 +93,16 @@ body {
 
 /*--------------ПРЕЛОУДЕР--------------*/
 /* Прелоудер */
+
+main,
+header {
+    z-index: 1;
+    /* Основной контент под прелоудером */
+}
+
+
+
+
 #preloader {
     position: fixed;
     top: 0;
@@ -188,28 +198,6 @@ body {
     transition: opacity 1s ease, visibility 1s ease;
 }
 
-/* Скрытие основного контента до исчезновения прелоудера */
-body.loading header,
-body.loading main {
-    visibility: hidden;
-}
-
-body.loaded header,
-body.loaded main {
-    visibility: visible;
-    animation: fadeInContent 1s ease forwards;
-}
-
-/* Анимация появления сайта */
-@keyframes fadeInContent {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
 
 /* Медиа-запросы для мобильных устройств */
 @media (max-width: 768px) {
@@ -252,6 +240,8 @@ body.loaded main {
         font-size: 30px;
     }
 }
+
+
 
 /*--------------ХЕДЕР--------------*/
 
