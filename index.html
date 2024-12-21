@@ -7,6 +7,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600&display=swap" rel="stylesheet">
     <style>
@@ -26,8 +29,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.0/pixi.min.js"></script>
 </head>
 
-<body>
+<body class="loading">
     <!--<div id="custom-cursor"></div>-->
+
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="text-small top-text">DIGITAL</div>
+            <div class="text-large">SVS</div>
+            <div class="text-small bottom-text">AGENCY</div>
+        </div>
+    </div>
+
+
+
+
+
     <!-------------------ХЕДЕР--------------------------->
 
     <header>
@@ -82,7 +98,67 @@
                 </div>
             </nav>
         </div>
+
+
+        <div class="mobile-menu hidden">
+            <div class="mobile-menu-container">
+                <div class="mobile-menu-header">
+                    <div class="language-switch-mob">
+                        <a class="language-link-mob link active" href="#" data-language="ua">UA</a>
+                        <span class="language-divider-mob"></span>
+                        <a class="language-link-mob link" href="#" data-language="pl">PL</a>
+                    </div>
+                    <button class="close-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="icon-menu" viewBox="0 0 16 16">
+                            <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <ul class="mobile-nav-list">
+                    <li><a href="#about" data-lang-ua="ПРО НАС" data-lang-pl="O NAS">ПРО НАС</a></li>
+                    <li><a href="#services" data-lang-ua="НАШІ ПОСЛУГИ" data-lang-pl="NASZE USŁUGI">НАШІ ПОСЛУГИ</a>
+                    </li>
+                    <li><a href="#cases" data-lang-ua="НАШІ КЕЙСИ" data-lang-pl="NASZE PRZYКЛАДЫ">НАШІ КЕЙСИ</a></li>
+                    <li><a href="#why-us" data-lang-ua="ЧОМУ МИ?" data-lang-pl="DLACZEGO MY?">ЧОМУ МИ?</a></li>
+                </ul>
+
+                <div class="button-mob">
+                    <div class="button-content-mob" onclick="closeMenuAndScrollToForm()">
+                        <div class="rectangles-mob">
+                            <div class="rectangle-mob-one"></div>
+                            <div class="rectangle-mob-two"></div>
+                        </div>
+                        <div class="btn-txt-mob" data-lang-ua="ПОЧНІМО СПІВПРАЦЮ"
+                            data-lang-pl="ROZPOCZNIJMY WSPÓŁPRACĘ">
+                            ПОЧНІМО СПІВПРАЦЮ
+                        </div>
+                        <div class="line-mob"></div>
+                    </div>
+                </div>
+
+                <div class="mobile-menu-footer">
+                    <a class="logo-link-mob link">
+                        <svg class="icon-mob">
+                            <use href="./images/icon.svg#icon-logo"></use>
+                        </svg>
+                    </a>
+                    <p>svsdigitalagency@gmail.com</p>
+                    <a href="https://www.instagram.com/svs.digital.agency/" target="_blank"
+                        class="btn-instagram-mob link" data-lang-ua="INSTAGRAM" data-lang-pl="INSTAGRAM">INSTAGRAM</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
     </header>
+
 
 
 
@@ -557,8 +633,8 @@
                                     <div class="icon-small"></div>
                                     <div class="icon-big"></div>
                                 </div>
-                                <h3 class="list-title" data-lang-ua="Креативність на максимумі"
-                                    data-lang-pl="Kreatywność na maksa">Креативність на максимумі</h3>
+                                <h3 class="list-title" data-lang-ua="Креативність на всю"
+                                    data-lang-pl="Kreatywność na maksa">Креативність на всю</h3>
                             </div>
                             <p class="list-txt"
                                 data-lang-ua="Ми віримо, що оригінальний дизайн і сучасні технології здатні змінювати уявлення про бренд.Наші ідеї виходять за рамки стандартів."
@@ -1087,16 +1163,15 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Получаем все элементы переключения языка
-            const languageLinks = document.querySelectorAll(".language-link");
+            // Получаем все элементы переключения языка для основной панели и мобильного меню
+            const allLanguageLinks = document.querySelectorAll(".language-link, .language-link-mob");
 
-            // Добавляем обработчик событий для каждого переключателя
-            languageLinks.forEach(link => {
+            allLanguageLinks.forEach(link => {
                 link.addEventListener("click", function (event) {
                     event.preventDefault();
                     const selectedLanguage = this.dataset.language; // "ua" или "pl"
 
-                    // Проходим по всем элементам с атрибутами data-lang
+                    // Обновляем тексты на странице
                     document.querySelectorAll("[data-lang-ua], [data-lang-pl]").forEach(element => {
                         if (selectedLanguage === "ua") {
                             element.textContent = element.dataset.langUa; // Текст для украинского
@@ -1105,12 +1180,39 @@
                         }
                     });
 
+                    // Применяем стили для текста кнопки
+                    const buttonText = document.querySelector(".btn-txt-mob");
+                    if (selectedLanguage === "ua") {
+                        buttonText.style.width = "220px";
+                        buttonText.style.fontSize = "18px";
+                    } else if (selectedLanguage === "pl") {
+                        buttonText.style.width = "250px";
+                        buttonText.style.fontSize = "16px";
+                    }
+
+                    // Применяем стили для контейнера кнопки
+                    const buttonContainer = document.querySelector(".button-mob");
+                    if (selectedLanguage === "ua") {
+                        buttonContainer.style.width = "256px";
+                    } else if (selectedLanguage === "pl") {
+                        buttonContainer.style.width = "290px";
+                    }
+                    // Применяем стили для линии
+                    const line = document.querySelector(".line-mob");
+                    if (selectedLanguage === "ua") {
+                        line.style.width = "254px";
+                    } else if (selectedLanguage === "pl") {
+                        line.style.width = "292px";
+                    }
                     // Обновляем активный стиль для выбранного языка
-                    languageLinks.forEach(link => link.classList.remove("active"));
+                    allLanguageLinks.forEach(link => link.classList.remove("active"));
                     this.classList.add("active");
                 });
             });
         });
+
+
+
     </script>
 
     <script>
@@ -1149,6 +1251,86 @@
             }
         });
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burgerMenu = document.querySelector('.burger-menu');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const closeMenuButton = document.querySelector('.close-menu');
+            const languageLinks = document.querySelectorAll('.language-link-mob');
+            const elementsWithLang = document.querySelectorAll('[data-lang-ua]');
+
+            // Открытие мобильного меню
+            burgerMenu.addEventListener('click', () => {
+                mobileMenu.classList.add('show');
+                mobileMenu.classList.remove('hidden');
+            });
+
+            // Закрытие мобильного меню
+            closeMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.remove('show');
+                mobileMenu.classList.add('hidden');
+            });
+
+            // Закрытие меню при клике на ссылку
+            document.querySelectorAll('.mobile-nav-list a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('show');
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+
+        });
+
+
+
+
+    </script>
+
+    <script>
+
+        function closeMenuAndScrollToForm() {
+            const formSection = document.getElementById("form-section"); // Секция формы
+            const mobileMenu = document.querySelector('.mobile-menu'); // Мобильное меню
+
+            if (mobileMenu) {
+                // Закрываем мобильное меню
+                mobileMenu.classList.remove('show');
+                mobileMenu.classList.add('hidden');
+            }
+
+            if (formSection) {
+                // Плавно прокручиваем к форме
+                formSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+        }
+
+
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const preloader = document.getElementById("preloader");
+
+            // Скрываем прелоудер через 4.5 секунды
+            setTimeout(() => {
+                preloader.classList.add("hidden");
+                document.body.classList.remove("loading");
+                document.body.classList.add("loaded");
+            }, 5000); // Увеличьте время, если нужно подогнать под анимацию
+        });
+
+
+
+
+    </script>
+
+
 
 
 </body>
