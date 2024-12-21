@@ -438,6 +438,7 @@ header {
     /* Автоматическая прокрутка */
     -webkit-overflow-scrolling: touch;
     /* Плавная прокрутка для iOS */
+    z-index: 10000;
 }
 
 .mobile-menu-container {
