@@ -32,16 +32,14 @@
 
 <body class="loading">
 
-
-    <div id="preloader">
-        <div class="preloader-content">
-            <div class="text-small top-text">DIGITAL</div>
-            <div class="text-large">SVS</div>
-            <div class="text-small bottom-text">AGENCY</div>
+    <div class="preloader">
+        <div class="shape-container">
+            <img src="./images/3.png" alt="Loading Shape" class="shape">
+        </div>
+        <div class="text-container-pre">
+            <div class="progress-text">0%</div>
         </div>
     </div>
-
-
 
 
     <!-------------------ХЕДЕР----------------->
@@ -1407,22 +1405,15 @@
 
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const preloader = document.getElementById("preloader");
 
-            // Скрываем прелоудер через 4.5 секунды
-            setTimeout(() => {
-                preloader.classList.add("hidden");
-                document.body.classList.remove("loading");
-                document.body.classList.add("loaded");
-            }, 4500); // Установите нужное время ожидания
-        });
 
 
 
 
     </script>
 
+
+    <!--АНИМАЦИЯ ТЕКСТА ПОСЛЕ ПРЕЛОУДЕРА-->
     <script>
 
         document.addEventListener("DOMContentLoaded", () => {
@@ -1446,6 +1437,36 @@
     </script>
 
     <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const preloader = document.querySelector(".preloader");
+            const progressText = document.querySelector(".progress-text");
+
+            let progress = 0;
+
+            const interval = setInterval(() => {
+                progress += 1;
+                progressText.textContent = `${progress}%`;
+
+                if (progress >= 100) {
+                    clearInterval(interval);
+
+                    // Плавное скрытие всех элементов прелоадера
+                    setTimeout(() => {
+                        preloader.style.transition = "opacity 1s ease-out";
+                        preloader.style.opacity = "0";
+
+                        // Удаление из DOM после завершения анимации
+                        setTimeout(() => {
+                            preloader.remove(); // Полное удаление прелоадера из DOM
+                            document.body.style.overflow = "auto"; // Включаем прокрутку сайта
+                        }, 1000); // Время, соответствующее transition
+                    }, 500); // Небольшая задержка после завершения прогресса
+                }
+            }, 50); // Скорость обновления прогресса
+        });
+
+
 
 
     </script>
