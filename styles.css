@@ -266,12 +266,90 @@ header {
 
 
 
+
+
+
+
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/2.png');
+
+    background-size: contain;
+
+    background-repeat: no-repeat;
+    background-position: 90% center;
+
+    animation:
+        complex-motion 30s ease-in-out infinite,
+        flicker-dim 8s ease-in-out infinite,
+        morph-shape 14s ease-in-out infinite;
+    transform-origin: center;
+    filter: brightness(50%);
+    z-index: 1;
+    pointer-events: none;
+
+}
+
+@keyframes complex-motion {
+
+    0%,
+    100% {
+        background-position: center;
+        transform: scale(1) rotate(0deg);
+    }
+
+    25% {
+        background-position: top left;
+        transform: scale(1.1) rotate(5deg);
+    }
+
+    50% {
+        background-position: bottom right;
+        transform: scale(1.2) rotate(-5deg);
+    }
+
+    75% {
+        background-position: top right;
+        transform: scale(1.1) rotate(3deg);
+    }
+}
+
+@keyframes flicker-dim {
+
+    0%,
+    100% {
+        filter: brightness(50%);
+    }
+
+    50% {
+        filter: brightness(70%);
+    }
+}
+
+@keyframes morph-shape {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+
 /*--------------ХЕДЕР--------------*/
 
 .menu-page-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 
 .icon {
@@ -442,6 +520,7 @@ header {
 
 }
 
+/* Базовые стили мобильного меню */
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -460,6 +539,7 @@ header {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     z-index: 10000;
+    pointer-events: auto;
 }
 
 .mobile-menu-container {
@@ -475,11 +555,13 @@ header {
 
 .mobile-menu.hidden {
     transform: translateX(-100%);
+    pointer-events: none;
 
 }
 
 .mobile-menu.show {
     transform: translateX(0);
+    pointer-events: auto;
 }
 
 .mobile-menu-header {
@@ -591,8 +673,10 @@ header {
     transition: color 0.3s ease;
 }
 
-.mobile-nav-list a:hover {
+.mobile-nav-list a:hover,
+.mobile-nav-list a:focus {
     color: #b80202;
+    /* Изменение цвета при ховере */
 }
 
 .button-mob {
@@ -903,25 +987,24 @@ p {
 
 
 
+
 .main-container {
-    height: 1080px;
+    height: 810px;
     position: relative;
     overflow: hidden;
     justify-content: center;
     align-items: center;
     display: flex;
+    z-index: 2;
 }
 
-.image-container-one {
-    transform: translateX(150px);
 
-}
 
 .title {
     z-index: 2;
     left: 3%;
     position: absolute;
-    top: 50%;
+    top: 34%;
     transform: translateY(-50%);
     text-align: left;
 
@@ -933,7 +1016,7 @@ p {
 
 .title h1 {
     font-family: 'Anton', sans-serif;
-    font-size: 260px;
+    font-size: 200px;
     font-weight: 400;
     line-height: 1.1;
     color: #fefefe;
@@ -947,23 +1030,16 @@ p {
 
 .txt-two {
     margin-bottom: -40px;
+
 }
 
 .txt-three {
     margin-bottom: 0;
 }
 
-.image-main {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    animation:
-        complex-motion 30s ease-in-out infinite,
-        flicker-dim 8s ease-in-out infinite,
-        morph-shape 14s ease-in-out infinite;
-    transform-origin: center;
-    filter: brightness(50%);
-}
+
+
+
 
 /* Заголовки */
 .txt-one,
@@ -988,6 +1064,12 @@ p {
 
 
 @media screen and (max-width: 768px) {
+
+    .background-animation {
+        display: none;
+    }
+
+
     .main-container {
         background-image: url('./images/2.webp');
         background-size: 110%;
@@ -1015,13 +1097,11 @@ p {
         z-index: 1;
     }
 
-    .image-container-one {
-        display: none;
-    }
 
-    .image-main {
-        display: none;
-    }
+
+
+
+
 
     .title {
         z-index: 2;
@@ -1078,14 +1158,14 @@ p {
 
 
 .text-container {
-    height: 472px;
+    height: 360px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     box-sizing: border-box;
-    margin-top: 100px;
+    margin-top: 0px;
 
 
 }
@@ -1303,7 +1383,7 @@ p {
 /*--------------БЛОК НАШІ ПОСЛУГИ--------------*/
 
 .parallax-container {
-    margin-top: 200px;
+    margin-top: 160px;
 }
 
 .five-container,
@@ -2892,37 +2972,6 @@ p {
 
 
 
-.button-three {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 100px auto 0 auto;
-    text-align: center;
-    width: fit-content;
-    cursor: pointer;
-}
-
-.button-three:hover .btn-txt,
-.button-three:focus .btn-txt {
-    color: #b80202;
-
-}
-
-.button-three:hover .rectangle_one,
-.button-three:focus .rectangle_one,
-.button-three:hover .rectangle_two,
-.button-three:focus .rectangle_two {
-    background: #fefefe;
-
-}
-
-.button-three:hover .line,
-.button-three:focus .line {
-    border-color: #fefefe;
-
-}
 
 
 
@@ -3004,7 +3053,6 @@ p {
         width: 12px;
         height: 34px;
         background-color: #b80202;
-        /* Красные иконки */
         transition: background-color 0.3s ease;
 
     }
@@ -3013,7 +3061,6 @@ p {
         width: 20px;
         height: 34px;
         background-color: #b80202;
-        /* Красные иконки */
         transition: background-color 0.3s ease;
     }
 
@@ -3024,7 +3071,6 @@ p {
         height: 34px;
         white-space: nowrap;
         color: #e0e0e0;
-        /* Серый заголовок */
         transition: color 0.3s ease;
     }
 
@@ -3036,7 +3082,6 @@ p {
         width: 100%;
         text-transform: lowercase;
         opacity: 0.1;
-        /* Полупрозрачный текст */
         transition: opacity 0.3s ease, color 0.3s ease;
     }
 
@@ -3048,26 +3093,22 @@ p {
     /* Состояние при взаимодействии */
     .list-item.active .list-txt {
         opacity: 1;
-        /* Полностью видимый текст */
         color: #e0e0e0;
-        /* Белый текст */
+
     }
 
     .list-item.active .list-title {
         color: #b80202;
-        /* Красный заголовок */
+
     }
 
     .list-item.active .icon-small,
     .list-item.active .icon-big {
         background-color: #e0e0e0;
-        /* Белые иконки */
+
     }
 
-    .button-three {
-        margin: 50px auto 0 auto;
-        text-align: center;
-    }
+
 }
 
 
