@@ -805,7 +805,7 @@
 
     <div id="notification" class="notification hidden"></div>
 
-
+    <!--АНИМАЦИЯ КАРТОЧЕК НАШИ УСЛУГИ-->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const cards = document.querySelectorAll(".card");
@@ -842,6 +842,9 @@
 
     </script>
 
+
+
+    <!--АНИМАЦИЯ ПОВЕДЕНИЯ БЛОКА ПОЧЕМУ МЫ-->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const listItems = document.querySelectorAll(".list-item");
@@ -852,7 +855,7 @@
                 const iconSmall = item.querySelector(".icon-small");
                 const iconBig = item.querySelector(".icon-big");
 
-                // Функция для изменения стилей
+                // Функция для применения стилей при взаимодействии
                 function applyHoverStyles() {
                     title.style.color = "#b80202"; // Заголовок красный
                     text.style.color = "#e0e0e0"; // Текст белый
@@ -861,6 +864,7 @@
                     iconBig.style.backgroundColor = "#e0e0e0";
                 }
 
+                // Функция для сброса стилей
                 function resetStyles() {
                     title.style.color = "#e0e0e0"; // Заголовок стандартный
                     text.style.color = "#e0e0e0"; // Текст стандартный
@@ -869,15 +873,33 @@
                     iconBig.style.backgroundColor = "#b80202";
                 }
 
-                // При наведении на заголовок
+                // Обработчики для мыши
                 title.addEventListener("mouseenter", applyHoverStyles);
                 title.addEventListener("mouseleave", resetStyles);
-
-                // При наведении на текст
                 text.addEventListener("mouseenter", applyHoverStyles);
                 text.addEventListener("mouseleave", resetStyles);
+
+                // Обработчики для мобильных устройств (касание)
+                title.addEventListener("touchstart", (e) => {
+                    e.preventDefault(); // Предотвращаем нежелательные эффекты
+                    applyHoverStyles();
+                });
+                title.addEventListener("touchend", (e) => {
+                    e.preventDefault();
+                    resetStyles();
+                });
+
+                text.addEventListener("touchstart", (e) => {
+                    e.preventDefault();
+                    applyHoverStyles();
+                });
+                text.addEventListener("touchend", (e) => {
+                    e.preventDefault();
+                    resetStyles();
+                });
             });
         });
+
     </script>
 
 
