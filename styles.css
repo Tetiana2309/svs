@@ -457,40 +457,39 @@ header {
     width: 100%;
     height: 100%;
     background-color: #000;
+    /* Черный фон */
     color: #fff;
+    /* Белый текст */
     z-index: 1000;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     transform: translateX(-100%);
+    /* Прячем меню изначально */
     transition: transform 0.3s ease-in-out;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    z-index: 10000;
+    /* Плавный скроллинг на мобильных устройствах */
     pointer-events: auto;
+    /* Включаем взаимодействие */
 }
 
 .mobile-menu-container {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 24px;
-    padding-bottom: 40px;
-
-
+    padding: 20px;
+    gap: 40px;
+    /* Расстояние между секциями */
 }
 
 .mobile-menu.hidden {
     transform: translateX(-100%);
-    pointer-events: none;
-
+    /* Скрываем меню */
 }
 
 .mobile-menu.show {
     transform: translateX(0);
-    pointer-events: auto;
+    /* Показываем меню */
 }
 
 .mobile-menu-header {
@@ -502,23 +501,29 @@ header {
 
 .language-switch-mob {
     display: flex;
-
     align-items: center;
 }
 
 .language-link-mob {
     color: #fff;
     text-transform: uppercase;
-
     text-decoration: none;
     font-family: "Namu-Pro", sans-serif;
     font-size: 16px;
     line-height: 140%;
     font-weight: 400;
+    transition: color 0.3s ease;
 }
 
 .language-link-mob.active {
     color: #b80202;
+    /* Цвет активного языка */
+}
+
+.language-link-mob:hover,
+.language-link-mob:focus {
+    color: #b80202;
+    /* Ховер для языков */
 }
 
 .language-divider-mob {
@@ -527,8 +532,6 @@ header {
     background-color: #b80202;
     transform: rotate(90deg);
 }
-
-
 
 .close-menu {
     width: 30px;
@@ -554,16 +557,12 @@ header {
 
 .close-menu:hover {
     box-shadow: 0 0 15px 5px rgba(184, 2, 2, 0.7);
-
     transform: scale(1.1);
-
 }
 
 .close-menu:active {
     transform: scale(0.95);
-
     box-shadow: 0 0 25px 10px rgba(184, 2, 2, 1);
-
 }
 
 .icon-menu {
@@ -571,17 +570,14 @@ header {
     height: 18px;
     fill: #b80202;
     transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .close-menu:hover .icon-menu {
     transform: rotate(90deg);
-
 }
 
 .close-menu:active .icon-menu {
     transform: rotate(180deg);
-
 }
 
 .mobile-nav-list {
@@ -589,7 +585,7 @@ header {
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    margin: 40px 0 0 0;
+    margin: 0;
 }
 
 .mobile-nav-list a {
@@ -605,7 +601,7 @@ header {
 .mobile-nav-list a:hover,
 .mobile-nav-list a:focus {
     color: #b80202;
-    /* Изменение цвета при ховере */
+    /* Ховер и фокус для ссылок */
 }
 
 .button-mob {
@@ -613,7 +609,6 @@ header {
     width: 256px;
     display: flex;
     margin: 60px auto;
-
 }
 
 .button-content-mob {
@@ -622,7 +617,6 @@ header {
     position: static;
     cursor: pointer;
     display: flex;
-
     justify-content: center;
 }
 
@@ -630,7 +624,6 @@ header {
     color: #fefefe;
     text-align: left;
     font-family: "Namu-Pro", sans-serif;
-
     line-height: 140%;
     font-weight: 400;
     position: absolute;
@@ -640,12 +633,7 @@ header {
     font-size: 18px;
     width: 220px;
     display: flex;
-
 }
-
-
-
-
 
 .rectangles-mob {
     width: 38px;
@@ -658,9 +646,8 @@ header {
     width: 12px;
     height: 34px;
     position: absolute;
-    left: 0px;
-    top: 0px;
-    overflow: hidden;
+    left: 0;
+    top: 0;
     transition: background-color 0.3s ease;
 }
 
@@ -670,8 +657,7 @@ header {
     height: 34px;
     position: absolute;
     left: 16px;
-    top: 0px;
-    overflow: hidden;
+    top: 0;
     transition: background-color 0.3s ease;
 }
 
@@ -681,23 +667,16 @@ header {
     border-color: #b80202;
     border-width: 4px 0 0 0;
     width: 254px;
-    height: 0px;
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 56px;
     transform-origin: 0 0;
-    transform: rotate(0deg) scale(1, 1);
     transition: border-color 0.3s ease;
 }
-
-
-
-
 
 .button-mob:hover .btn-txt-mob,
 .button-mob:focus .btn-txt-mob {
     color: #b80202;
-
 }
 
 .button-mob:hover .rectangle-mob-one,
@@ -705,13 +684,11 @@ header {
 .button-mob:hover .rectangle-mob-two,
 .button-mob:focus .rectangle-mob-two {
     background: #fefefe;
-
 }
 
 .button-mob:hover .line-mob,
 .button-mob:focus .line-mob {
     border-color: #fefefe;
-
 }
 
 .mobile-menu-footer {
@@ -719,11 +696,9 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
 }
 
 .mobile-menu-footer .logo-link {
-
     fill: #b80202;
 }
 
@@ -739,54 +714,33 @@ header {
 }
 
 .btn-instagram-mob {
-
     border-radius: 30px;
-    border-style: solid;
-    border-color: #e0e0e0;
-    border-width: 1px;
-
+    border: 1px solid #e0e0e0;
     display: flex;
-    flex-direction: row;
-    gap: 10px;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    position: relative;
     background: none;
     color: var(--color-1);
     font-family: "Namu-Pro", sans-serif;
-
     line-height: 120%;
     font-weight: 400;
     text-transform: uppercase;
     transition: all 0.3s ease;
-
-
-
     padding: 16px 20px;
     font-size: 14px;
-    width: 100%;
     max-width: 250px;
-
-
-
 }
-
 
 .btn-instagram-mob:hover,
 .btn-instagram-mob:focus {
     color: #b80202;
     border-color: #b80202;
-
 }
 
 .btn-instagram-mob:active {
     color: #fefefe;
     border-color: var(--color-1);
-
 }
-
-
 
 
 
