@@ -27,6 +27,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.0/pixi.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="loading">
@@ -169,24 +170,29 @@
 
         <!-------------------ГОЛОВНИЙ БЛОК--------------------------->
         <div class="main-container container">
-
-
             <div class="title">
-                <h1 class="txt-one">SVS</h1>
-                <h1 class="txt-two">DIGITAL </h1>
-                <h1 class="txt-three">AGENCY</h1>
+                <h1 class="txt-one ">
+                    <span class="word">SVS</span>
+                </h1>
+                <h1 class="txt-two ">
+                    <span class="word">DIGITAL</span>
+                </h1>
+                <h1 class="txt-three">
+                    <span class="word">AGENCY</span>
+                </h1>
             </div>
 
             <div class="image-container-one">
-
                 <img src="./images/2.png" alt="3D Object" class="image-main" width="300" height="300">
             </div>
         </div>
 
 
+
         <!------------------- БЛОК ТЕКСТ--------------------------->
 
-        <div class="text-container container" id="about">
+        <div class="text-container container" id="about" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="3000">
             <p class="text-one"
                 data-lang-ua="ми — команда, що створює унікальні рішення у світі діджитал. Наш підхід — це поєднання інновацій, креативності та прагнення до досконалості."
                 data-lang-pl="jesteśmy zespołem, który tworzy unikalne rozwiązania w świecie cyfrowym. Nasze podejście to połączenie innowacji, kreatywności i dążenia do doskonałości.">
@@ -215,7 +221,7 @@
 
         <!------------------- БЛОК НАШІ ПОСЛУГИ--------------------------->
 
-        <div class="parallax-container container" id="services">
+        <div class="parallax-container" id="services">
 
             <!-- РОЗРОБКА САЙТІВ -->
             <div class="five-container card">
@@ -436,7 +442,8 @@
 
         <!--текст-->
         <div class="cases container">
-            <div class="text-content" id="cases">
+            <div class="text-content" id="cases" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000">
                 <p class="subtext"
                     data-lang-ua="наші ідеї виходять поза межі звичного, щоб дарувати унікальні рішення для кожного."
                     data-lang-pl="nasze pomysły wychodzą poza schematy, aby zapewniać unikalne rozwiązania dla każdego.">
@@ -456,7 +463,7 @@
 
             <div class="cases-row-one">
                 <!-- Первый кейс -->
-                <div class="case">
+                <div class="case" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                     <div class="case-container-one">
                         <div class="case-content-one">
                             <video autoplay loop muted playsinline>
@@ -477,7 +484,7 @@
                     </div>
                 </div>
                 <!-- Второй кейс -->
-                <div class="case">
+                <div class="case" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                     <div class="case-container-two">
                         <div class="case-content-two">
                             <video autoplay loop muted playsinline>
@@ -501,7 +508,7 @@
 
             <div class="cases-row-two">
                 <!-- Третий кейс -->
-                <div class="case">
+                <div class="case" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                     <div class="case-container-two">
                         <div class="case-content-two">
                             <video autoplay loop muted playsinline>
@@ -522,7 +529,7 @@
                     </div>
                 </div>
                 <!-- Четвертый кейс -->
-                <div class="case">
+                <div class="case" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                     <div class="case-container-one">
                         <div class="case-content-one">
                             <video autoplay loop muted playsinline>
@@ -547,7 +554,7 @@
 
             <div class="cases-row-three">
                 <!-- Пятий кейс -->
-                <div class="case">
+                <div class="case" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                     <div class="case-container-one">
                         <div class="case-content-one">
                             <video autoplay loop muted playsinline>
@@ -568,7 +575,7 @@
                     </div>
                 </div>
                 <!-- Шестой кейс -->
-                <div class="case">
+                <div class="case" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                     <div class="case-container-two">
                         <div class="case-content-two">
                             <video autoplay loop muted playsinline>
@@ -593,7 +600,8 @@
 
         <!-------------------БЛОК ЧОМУ ОБИРАЮТЬ НАС--------------------------->
 
-        <div class="four-container container" id="why-us">
+        <div class="four-container container" id="why-us" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="3000">
             <div class="four-cont">
                 <div class="main-title-two">
                     <h2 class="four" data-lang-ua="ЧОМУ" data-lang-pl="DLACZEGO">ЧОМУ</h2>
@@ -1322,7 +1330,7 @@
                 preloader.classList.add("hidden");
                 document.body.classList.remove("loading");
                 document.body.classList.add("loaded");
-            }, 5000); // Увеличьте время, если нужно подогнать под анимацию
+            }, 4500); // Установите нужное время ожидания
         });
 
 
@@ -1330,9 +1338,34 @@
 
     </script>
 
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const titles = document.querySelectorAll(".txt-one, .txt-two, .txt-three");
+
+            // Функция запуска анимации после исчезновения прелоудера
+            const startTitleAnimation = () => {
+                titles.forEach((title, index) => {
+                    setTimeout(() => {
+                        title.classList.add("animate");
+                    }, index * 300); // Задержка между заголовками
+                });
+            };
+
+            // Запускаем анимацию после прелоудера
+            setTimeout(startTitleAnimation, 4500); // Время совпадает с прелоудером
+        });
 
 
 
+    </script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 
