@@ -270,77 +270,6 @@ header {
 
 
 
-.background-animation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('./images/2.png');
-
-    background-size: contain;
-
-    background-repeat: no-repeat;
-    background-position: 90% center;
-
-    animation:
-        complex-motion 30s ease-in-out infinite,
-        flicker-dim 8s ease-in-out infinite,
-        morph-shape 14s ease-in-out infinite;
-    transform-origin: center;
-    filter: brightness(50%);
-    z-index: 1;
-    pointer-events: none;
-
-}
-
-@keyframes complex-motion {
-
-    0%,
-    100% {
-        background-position: center;
-        transform: scale(1) rotate(0deg);
-    }
-
-    25% {
-        background-position: top left;
-        transform: scale(1.1) rotate(5deg);
-    }
-
-    50% {
-        background-position: bottom right;
-        transform: scale(1.2) rotate(-5deg);
-    }
-
-    75% {
-        background-position: top right;
-        transform: scale(1.1) rotate(3deg);
-    }
-}
-
-@keyframes flicker-dim {
-
-    0%,
-    100% {
-        filter: brightness(50%);
-    }
-
-    50% {
-        filter: brightness(70%);
-    }
-}
-
-@keyframes morph-shape {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-}
 
 
 /*--------------ХЕДЕР--------------*/
@@ -979,7 +908,77 @@ p {
 }
 
 */
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/2.png');
 
+    background-size: contain;
+
+    background-repeat: no-repeat;
+    background-position: 90% center;
+
+    animation:
+        complex-motion 30s ease-in-out infinite,
+        flicker-dim 8s ease-in-out infinite,
+        morph-shape 14s ease-in-out infinite;
+    transform-origin: center;
+    filter: brightness(50%);
+    z-index: 1;
+    pointer-events: none;
+
+}
+
+@keyframes complex-motion {
+
+    0%,
+    100% {
+        background-position: center;
+        transform: scale(1) rotate(0deg);
+    }
+
+    25% {
+        background-position: top left;
+        transform: scale(1.1) rotate(5deg);
+    }
+
+    50% {
+        background-position: bottom right;
+        transform: scale(1.2) rotate(-5deg);
+    }
+
+    75% {
+        background-position: top right;
+        transform: scale(1.1) rotate(3deg);
+    }
+}
+
+@keyframes flicker-dim {
+
+    0%,
+    100% {
+        filter: brightness(50%);
+    }
+
+    50% {
+        filter: brightness(70%);
+    }
+}
+
+@keyframes morph-shape {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
 
 /*--------------ГОЛОВНИЙ БЛОК--------------*/
 
