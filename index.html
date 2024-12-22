@@ -855,50 +855,84 @@
                 const iconSmall = item.querySelector(".icon-small");
                 const iconBig = item.querySelector(".icon-big");
 
-                // Функция для применения стилей при взаимодействии
-                function applyHoverStyles() {
+                // Таймер для сброса состояния на мобильных устройствах
+                let resetTimeout;
+
+                // Функция для применения стилей (мобильная версия)
+                function applyMobileStyles() {
+                    clearTimeout(resetTimeout); // Сбрасываем таймер, если он есть
                     title.style.color = "#b80202"; // Заголовок красный
                     text.style.color = "#e0e0e0"; // Текст белый
-                    text.style.opacity = "1"; // Полная видимость
-                    iconSmall.style.backgroundColor = "#e0e0e0"; // Квадраты белые
+                    text.style.opacity = "1"; // Полная видимость текста
+                    iconSmall.style.backgroundColor = "#e0e0e0"; // Иконки белые
                     iconBig.style.backgroundColor = "#e0e0e0";
                 }
 
-                // Функция для сброса стилей
-                function resetStyles() {
-                    title.style.color = "#e0e0e0"; // Заголовок стандартный
-                    text.style.color = "#e0e0e0"; // Текст стандартный
-                    text.style.opacity = "0.1";
-                    iconSmall.style.backgroundColor = "#b80202"; // Квадраты стандартные
-                    iconBig.style.backgroundColor = "#b80202";
+                // Функция для сброса стилей (мобильная версия)
+                function resetMobileStyles() {
+                    resetTimeout = setTimeout(() => {
+                        title.style.color = "#e0e0e0"; // Заголовок стандартный
+                        text.style.color = "#e0e0e0"; // Текст стандартный
+                        text.style.opacity = "0.1"; // Едва видимый текст
+                        iconSmall.style.backgroundColor = "#b80202"; // Иконки стандартные
+                        iconBig.style.backgroundColor = "#b80202";
+                    }, 3000); // Задержка 3 секунды
                 }
 
-                // Обработчики для мыши
-                title.addEventListener("mouseenter", applyHoverStyles);
-                title.addEventListener("mouseleave", resetStyles);
-                text.addEventListener("mouseenter", applyHoverStyles);
-                text.addEventListener("mouseleave", resetStyles);
-
-                // Обработчики для мобильных устройств (касание)
+                // Обработчики для мобильных устройств
                 title.addEventListener("touchstart", (e) => {
-                    e.preventDefault(); // Предотвращаем нежелательные эффекты
-                    applyHoverStyles();
+                    e.preventDefault(); // Предотвращаем стандартное поведение
+                    applyMobileStyles();
                 });
                 title.addEventListener("touchend", (e) => {
                     e.preventDefault();
-                    resetStyles();
+                    resetMobileStyles();
                 });
 
                 text.addEventListener("touchstart", (e) => {
                     e.preventDefault();
-                    applyHoverStyles();
+                    applyMobileStyles();
                 });
                 text.addEventListener("touchend", (e) => {
                     e.preventDefault();
-                    resetStyles();
+                    resetMobileStyles();
+                });
+
+                // Обработчики для десктопа остаются без изменений
+                title.addEventListener("mouseenter", () => {
+                    title.style.color = "#b80202";
+                    text.style.color = "#e0e0e0";
+                    text.style.opacity = "1";
+                    iconSmall.style.backgroundColor = "#e0e0e0";
+                    iconBig.style.backgroundColor = "#e0e0e0";
+                });
+
+                title.addEventListener("mouseleave", () => {
+                    title.style.color = "#e0e0e0";
+                    text.style.color = "#e0e0e0";
+                    text.style.opacity = "0.1";
+                    iconSmall.style.backgroundColor = "#b80202";
+                    iconBig.style.backgroundColor = "#b80202";
+                });
+
+                text.addEventListener("mouseenter", () => {
+                    title.style.color = "#b80202";
+                    text.style.color = "#e0e0e0";
+                    text.style.opacity = "1";
+                    iconSmall.style.backgroundColor = "#e0e0e0";
+                    iconBig.style.backgroundColor = "#e0e0e0";
+                });
+
+                text.addEventListener("mouseleave", () => {
+                    title.style.color = "#e0e0e0";
+                    text.style.color = "#e0e0e0";
+                    text.style.opacity = "0.1";
+                    iconSmall.style.backgroundColor = "#b80202";
+                    iconBig.style.backgroundColor = "#b80202";
                 });
             });
         });
+
 
     </script>
 
