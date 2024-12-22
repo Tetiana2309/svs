@@ -538,6 +538,7 @@ header {
     right: 20px;
     box-shadow: 0 0 0 rgba(184, 2, 2, 0);
     /* Изначальная тень отсутствует */
+    touch-action: manipulation;
 }
 
 .close-menu:hover {

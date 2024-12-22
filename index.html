@@ -1268,27 +1268,40 @@
             const elementsWithLang = document.querySelectorAll('[data-lang-ua]');
 
             // Открытие мобильного меню
-            burgerMenu.addEventListener('click', () => {
+            const openMenu = () => {
                 mobileMenu.classList.add('show');
                 mobileMenu.classList.remove('hidden');
-            });
+            };
 
             // Закрытие мобильного меню
-            closeMenuButton.addEventListener('click', () => {
+            const closeMenu = () => {
                 mobileMenu.classList.remove('show');
                 mobileMenu.classList.add('hidden');
-            });
+            };
+
+            // Добавляем обработчики для открытия и закрытия меню
+            burgerMenu.addEventListener('click', openMenu); // ПК
+            burgerMenu.addEventListener('touchstart', (e) => {
+                e.preventDefault(); // Предотвращает двойное срабатывание
+                openMenu();
+            }); // Сенсорные устройства
+
+            closeMenuButton.addEventListener('click', closeMenu); // ПК
+            closeMenuButton.addEventListener('touchstart', (e) => {
+                e.preventDefault(); // Предотвращает двойное срабатывание
+                closeMenu();
+            }); // Сенсорные устройства
 
             // Закрытие меню при клике на ссылку
             document.querySelectorAll('.mobile-nav-list a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.remove('show');
-                    mobileMenu.classList.add('hidden');
-                });
+                link.addEventListener('click', closeMenu); // ПК
+                link.addEventListener('touchstart', (e) => {
+                    e.preventDefault(); // Предотвращает двойное срабатывание
+                    closeMenu();
+                }); // Сенсорные устройства
             });
-
-
         });
+
 
 
 
