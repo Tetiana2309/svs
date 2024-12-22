@@ -3003,13 +3003,18 @@ p {
     .icon-small {
         width: 12px;
         height: 34px;
+        background-color: #b80202;
+        /* Красные иконки */
+        transition: background-color 0.3s ease;
 
     }
 
     .icon-big {
         width: 20px;
         height: 34px;
-
+        background-color: #b80202;
+        /* Красные иконки */
+        transition: background-color 0.3s ease;
     }
 
     .list-title {
@@ -3018,6 +3023,9 @@ p {
         text-align: center;
         height: 34px;
         white-space: nowrap;
+        color: #e0e0e0;
+        /* Серый заголовок */
+        transition: color 0.3s ease;
     }
 
     .list-txt {
@@ -3027,12 +3035,33 @@ p {
         opacity: 1;
         width: 100%;
         text-transform: lowercase;
-
+        opacity: 0.1;
+        /* Полупрозрачный текст */
+        transition: opacity 0.3s ease, color 0.3s ease;
     }
 
     .list-line {
         width: 100%;
         margin-top: 2px;
+    }
+
+    /* Состояние при взаимодействии */
+    .list-item.active .list-txt {
+        opacity: 1;
+        /* Полностью видимый текст */
+        color: #e0e0e0;
+        /* Белый текст */
+    }
+
+    .list-item.active .list-title {
+        color: #b80202;
+        /* Красный заголовок */
+    }
+
+    .list-item.active .icon-small,
+    .list-item.active .icon-big {
+        background-color: #e0e0e0;
+        /* Белые иконки */
     }
 
     .button-three {
