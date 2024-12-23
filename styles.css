@@ -122,109 +122,92 @@ header {
 
 }
 
-
-
-.preloader {
+/* Упаковка прелоадера */
+.preloader-5-wrapper {
     position: fixed;
+    /* Прелоадер перекрывает всю страницу */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background: black;
+    /* Фон прелоадера */
+    z-index: 9999;
+    /* Выше всех элементов */
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
-    z-index: 1000;
-    opacity: 1;
-    transition: opacity 1s ease-out;
-
 }
 
+/* Прелоадер */
+.preloader-5 {
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--color-2);
+    animation: preloader-5-spin 2s linear infinite;
+}
 
-.shape-container {
+.preloader-5:before {
+    content: "";
     position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    filter: brightness(30%);
-
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--color-1);
+    animation: preloader-5-spin 3s linear infinite;
 }
 
-.shape {
-    width: 500px;
-    height: 500px;
-    animation: realistic-motion 40s infinite cubic-bezier(0.42, 0, 0.58, 1);
-
-}
-
-
-.text-container-pre {
+.preloader-5:after {
+    content: "";
     position: absolute;
-    top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%);
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--color-2);
+    animation: preloader-5-spin 1.5s linear infinite;
 }
 
-.progress-text {
-    font-family: 'Anton', sans-serif;
-    font-size: 10rem;
-    color: var(--color-1);
-    animation: text-fade 2s infinite ease-in-out;
-    transition: opacity 1s ease-out;
-
-    opacity: 1;
-
-
-}
-
-/* Реалистичное движение фигуры */
-@keyframes realistic-motion {
+@keyframes preloader-5-spin {
     0% {
-        transform: translate(0, 0) rotate(0deg) scale(1);
-    }
-
-    10% {
-        transform: translate(-15px, -10px) rotate(-2deg) scale(1.02);
-    }
-
-    25% {
-        transform: translate(10px, -15px) rotate(3deg) scale(0.98);
-    }
-
-    35% {
-        transform: translate(-10px, 5px) rotate(-1deg) scale(1.03);
-    }
-
-    50% {
-        transform: translate(20px, 10px) rotate(4deg) scale(0.97);
-    }
-
-    65% {
-        transform: translate(-10px, -20px) rotate(-3deg) scale(1.04);
-    }
-
-    75% {
-        transform: translate(5px, 15px) rotate(2deg) scale(1.01);
+        transform: rotate(0deg);
     }
 
     100% {
-        transform: translate(0, 0) rotate(0deg) scale(1);
+        transform: rotate(360deg);
     }
 }
 
-/* Анимация текста */
-@keyframes text-fade {
-
-    0%,
-    100% {
-        opacity: 0.5;
-    }
-
-    50% {
-        opacity: 1;
-    }
+/* Скрытие содержимого, пока прелоадер видим */
+body {
+    overflow: hidden;
+    /* Отключаем прокрутку */
 }
 
+/* Прелоадер исчезает */
+.preloader-hidden {
+    opacity: 0;
+    /* Прозрачность */
+    transition: opacity 0.5s ease-out;
+    /* Плавное исчезновение */
+    pointer-events: none;
+    /* Убираем взаимодействие с элементом */
+}
+
+.preloader-none {
+    display: none;
+    /* Полное удаление из DOM */
+}
 
 
 @media (max-width: 768px) {
