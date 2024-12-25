@@ -1,0 +1,333 @@
+:root {
+    --color-1: #fefefe;
+    --color-2: #b80202;
+    --color-3: #b7b7b7;
+    --color-4: #e0e0e0;
+}
+
+
+
+
+
+/*--------------ПЕРШИЙ КЕЙС---------------*/
+
+.section-cases-one {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 720px;
+    background: black;
+    overflow: hidden;
+
+}
+
+
+.cases-one {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 620px;
+}
+
+
+.background-animation-cases {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-image: url('./images/3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation:
+        complex-motion 30s ease-in-out infinite,
+        flicker-dim 8s ease-in-out infinite,
+        morph-shape 14s ease-in-out infinite;
+    transform-origin: center;
+    filter: brightness(50%);
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+
+.text-cases-one {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+}
+
+.text-cases-one h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 200px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #fefefe;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.title-cases-one- {
+    margin-bottom: -20px;
+    text-align: left;
+}
+
+@keyframes complex-motion {
+
+    0%,
+    100% {
+        background-position: center;
+        transform: scale(1) rotate(0deg);
+    }
+
+    25% {
+        background-position: top left;
+        transform: scale(1.1) rotate(5deg);
+    }
+
+    50% {
+        background-position: bottom right;
+        transform: scale(1.2) rotate(-5deg);
+    }
+
+    75% {
+        background-position: top right;
+        transform: scale(1.1) rotate(3deg);
+    }
+}
+
+@keyframes flicker-dim {
+
+    0%,
+    100% {
+        filter: brightness(50%);
+    }
+
+    50% {
+        filter: brightness(70%);
+    }
+}
+
+@keyframes morph-shape {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .section-cases-one {
+        height: 500px;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .cases-one {
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+        position: relative;
+        z-index: 1;
+
+    }
+
+    .background-animation-cases {
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        background-image: url('./images/3.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        animation:
+            complex-motion 30s ease-in-out infinite,
+            flicker-dim 8s ease-in-out infinite,
+            morph-shape 14s ease-in-out infinite;
+        transform-origin: center;
+        filter: brightness(50%);
+        z-index: 3;
+        pointer-events: none;
+        opacity: 0.5;
+
+    }
+
+    .text-cases-one {
+        z-index: 1;
+        text-align: center;
+        position: relative;
+        opacity: 0.9;
+
+    }
+
+    .text-cases-one h1 {
+        font-family: 'Anton', sans-serif;
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 1.1;
+        color: #fefefe;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .title-cases-one- {
+        margin-bottom: -20px;
+    }
+
+    /* Анимация движения фона */
+    @keyframes background-motion {
+        0% {
+            background-position: center;
+        }
+
+        50% {
+            background-position: 30% 50%;
+        }
+
+        100% {
+            background-position: center;
+        }
+    }
+
+    /* Анимация fade-in для появления */
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+            transform: scale(1.05);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+
+.text-container-cases-one {
+    height: 404px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 40px;
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .text-container-cases-one {
+        height: 384px;
+    }
+
+}
+
+
+.case-presentation-one {
+    display: flex;
+    gap: 36px;
+    margin-top: 200px;
+}
+
+.case-presentation-desctop {
+    border-radius: 20px;
+    border: 1px solid #b7b7b7;
+    width: 978px;
+    height: 652px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.3), transparent);
+}
+
+
+.presentation-content-desctop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 872px;
+    height: 526px;
+    position: relative;
+    overflow: hidden;
+}
+
+.presentation-content-desctop video {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    display: block;
+
+}
+
+.presentation-content-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    height: auto;
+
+}
+
+.image-mobile {
+    height: auto;
+    object-fit: cover;
+}
+
+
+.case-presentation-two {
+    display: flex;
+    gap: 36px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    justify-content: flex-end;
+}
+
+.list-cases {
+    margin-top: 200px;
+}
+
+.cases-list {
+    width: 721px;
+}
+
+.cases-btn {
+    margin: 0 auto;
+    display: block;
+}
+
+.mobile {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.image-lending {
+    height: auto;
+    object-fit: cover;
+}
+
+.cases-lending-presentation {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}

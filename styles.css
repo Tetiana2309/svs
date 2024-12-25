@@ -820,40 +820,7 @@ body {
 
 
 
-/*
 
-#custom-cursor {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    background-color: #b80202;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 1000;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0 10px 4px rgba(184, 2, 2, 0.7);
-    filter: blur(1px);
-}
-
-
-
-
-
-body {
-    cursor: none !important;
-}
-
-
-a,
-button,
-input,
-select,
-.button-two,
-p {
-    cursor: none !important;
-}
-
-*/
 .background-animation {
     position: absolute;
     top: 0;
@@ -1960,9 +1927,7 @@ p {
 
     }
 
-    .ca {
-        white-space: nowrap;
-    }
+
 
 
     .category-s {
