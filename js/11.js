@@ -18,39 +18,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Добавляем обработчики для открытия и закрытия меню
     burgerMenu.addEventListener('click', openMenu);
-    burgerMenu.addEventListener('touchstart', (e) => {
-        e.preventDefault(); // Предотвращает двойное срабатывание
-        openMenu();
-    });
-
     closeMenuButton.addEventListener('click', closeMenu);
-    closeMenuButton.addEventListener('touchstart', (e) => {
-        e.preventDefault(); // Предотвращает двойное срабатывание
-        closeMenu();
-    });
 
-    // Закрытие меню и переход к секции при клике на ссылку
-    menuLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            const targetId = link.getAttribute('href').substring(1); // Получаем ID секции
-            const targetSection = document.getElementById(targetId);
+    // Определяем текущую страницу по URL
+    const currentPage = window.location.pathname;
 
-            if (targetSection) {
-                e.preventDefault(); // Предотвращаем стандартное поведение (перезагрузку)
-                targetSection.scrollIntoView({ behavior: 'smooth' }); // Плавный скролл
-            }
-            closeMenu(); // Закрываем меню
+    if (currentPage.includes('index.html') || currentPage === '/' || currentPage === '') {
+        // Логика для страницы index.html
+        menuLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                const targetId = link.getAttribute('href').substring(1); // Получаем ID секции
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    e.preventDefault(); // Предотвращаем стандартное поведение
+                    targetSection.scrollIntoView({ behavior: 'smooth' }); // Плавный скролл
+                }
+                closeMenu(); // Закрываем меню
+            });
         });
-
-        link.addEventListener('touchstart', (e) => {
-            const targetId = link.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-
-            if (targetSection) {
+    } else if (currentPage.includes('case_one.html')) {
+        // Логика для страницы case_one.html
+        menuLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
                 e.preventDefault(); // Предотвращаем стандартное поведение
-                targetSection.scrollIntoView({ behavior: 'smooth' });
-            }
-            closeMenu();
+                const targetHref = link.getAttribute('href'); // Получаем ссылку с якорем
+                window.location.href = targetHref; // Перенаправляем на index.html с якорем
+            });
         });
-    });
+    }
 });
+

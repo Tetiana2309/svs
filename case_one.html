@@ -53,19 +53,21 @@
 
             <ul class="nav-list list">
                 <li class="nav-item list">
-                    <a class="nav-link link" href="#about" data-lang-ua="ПРО НАС" data-lang-pl="O NAS">ПРО
+                    <a class="nav-link link" href="index.html#about" data-lang-ua="ПРО НАС" data-lang-pl="O NAS">ПРО
                         НАС</a>
                 </li>
                 <li class="nav-item list">
-                    <a class="nav-link link" href="#services" data-lang-ua="НАШІ ПОСЛУГИ"
+                    <a class="nav-link link" href="index.html#services" data-lang-ua="НАШІ ПОСЛУГИ"
                         data-lang-pl="NASZE USŁUGI">НАШІ ПОСЛУГИ</a>
                 </li>
                 <li class="nav-item list">
-                    <a class="nav-link link" href="#cases" data-lang-ua="НАШІ КЕЙСИ" data-lang-pl="NASZE PRZYKŁADY">НАШІ
+                    <a class="nav-link link" href="index.html#cases" data-lang-ua="НАШІ КЕЙСИ"
+                        data-lang-pl="NASZE PRZYKŁADY">НАШІ
                         КЕЙСИ</a>
                 </li>
                 <li class="nav-item list">
-                    <a class="nav-link link" href="#why-us" data-lang-ua="ЧОМУ МИ?" data-lang-pl="DLACZEGO MY?">ЧОМУ
+                    <a class="nav-link link" href="index.html#why-us" data-lang-ua="ЧОМУ МИ?"
+                        data-lang-pl="DLACZEGO MY?">ЧОМУ
                         МИ?</a>
                 </li>
 
@@ -107,12 +109,13 @@
             </div>
 
             <ul class="mobile-nav-list">
-                <li><a href="#about" data-lang-ua="ПРО НАС" data-lang-pl="O NAS">ПРО НАС</a></li>
-                <li><a href="#services" data-lang-ua="НАШІ ПОСЛУГИ" data-lang-pl="NASZE USŁUGI">НАШІ ПОСЛУГИ</a>
+                <li><a href="index.html#about" data-lang-ua="ПРО НАС" data-lang-pl="O NAS">ПРО НАС</a></li>
+                <li><a href="index.html#services" data-lang-ua="НАШІ ПОСЛУГИ" data-lang-pl="NASZE USŁUGI">НАШІ
+                        ПОСЛУГИ</a>
                 </li>
-                <li><a href="#cases" data-lang-ua="НАШІ КЕЙСИ" data-lang-pl="NASZE PRZYКЛАДЫ">НАШІ КЕЙСИ</a>
+                <li><a href="index.html#cases" data-lang-ua="НАШІ КЕЙСИ" data-lang-pl="NASZE PRZYКЛАДЫ">НАШІ КЕЙСИ</a>
                 </li>
-                <li><a href="#why-us" data-lang-ua="ЧОМУ МИ?" data-lang-pl="DLACZEGO MY?">ЧОМУ МИ?</a></li>
+                <li><a href="index.html#why-us" data-lang-ua="ЧОМУ МИ?" data-lang-pl="DLACZEGO MY?">ЧОМУ МИ?</a></li>
             </ul>
 
             <div class="button-mob">
@@ -224,7 +227,7 @@
     <section class="section-two-presentation">
         <div class="case-presentation-two container">
 
-            <div class="presentation-content-mobile">
+            <div class="presentation-content-mobile mobile-presentation">
                 <img src="./images/mob_2..png" alt="mob" class="image-mobile">
             </div>
             <div class="case-presentation-desctop">
@@ -241,7 +244,7 @@
     <!-------------------П'ЯТИЙ БЛОК КЕЙСУ----------------->
 
     <section class="list-cases-one">
-        <div class="list-section list-cases">
+        <div class="list-section list-cases container">
 
             <!-- Первый блок -->
             <div class="list-one">
@@ -323,7 +326,7 @@
     <section class="section-four-presentation">
         <div class="case-presentation-two container">
 
-            <div class="presentation-content-mobile">
+            <div class="presentation-content-mobile mobile-presentation">
                 <img src="./images/mob_4.png" alt="mob" class="image-mobile">
             </div>
             <div class="case-presentation-desctop">
@@ -340,7 +343,7 @@
 
     <!-------------------ВОСЬМИЙ БЛОК КЕЙСУ----------------->
     <section class="mobile-section">
-        <div class="mobile">
+        <div class="mobile container">
             <div class="presentation-content-mobile">
                 <img src="./images/mob_5.png" alt="mob" class="image-mobile">
             </div>
@@ -352,7 +355,7 @@
 
     <!-------------------ДЕВ'ЯТИЙ БЛОК КЕЙСУ----------------->
     <section class="lending-presentation">
-        <div class="cases-lending-presentation">
+        <div class="cases-lending-presentation container">
             <img src="./images/lend_img.png" alt="mob" class="image-lending">
         </div>
     </section>
@@ -472,6 +475,20 @@
 <script src="js/11.js"></script>
 <script src="js/12.js"></script>
 <script src="js/13.js"></script>
+
+<script>
+    // Обработка кликов для навигации
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault(); // Блокируем стандартное поведение
+            const href = this.getAttribute('href'); // Получаем ссылку
+            window.location.href = href; // Переход по адресу
+        });
+    });
+</script>
+
+
+
 
 
 

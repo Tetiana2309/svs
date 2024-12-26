@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'NAMU';
+            src: url('fonts/NAMU-Bold.otf') format('opentype');
+            font-weight: 900;
+            font-style: normal;
+        }
+    </style>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./cases.css" />
+
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.0/pixi.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+
+
+
+
+<!-------------------ХЕДЕР----------------->
+<header>
+    <div class="container">
+        <nav class="menu-page-nav">
+            <a class="logo-link link">
+                <svg class="icon">
+                    <use href="./images/icon.svg#icon-logo"></use>
+                </svg>
+            </a>
+
+            <div class="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <ul class="nav-list list">
+                <li class="nav-item list">
+                    <a class="nav-link link" href="index.html#about" data-lang-ua="ПРО НАС" data-lang-pl="O NAS">ПРО
+                        НАС</a>
+                </li>
+                <li class="nav-item list">
+                    <a class="nav-link link" href="index.html#services" data-lang-ua="НАШІ ПОСЛУГИ"
+                        data-lang-pl="NASZE USŁUGI">НАШІ ПОСЛУГИ</a>
+                </li>
+                <li class="nav-item list">
+                    <a class="nav-link link" href="index.html#cases" data-lang-ua="НАШІ КЕЙСИ"
+                        data-lang-pl="NASZE PRZYKŁADY">НАШІ
+                        КЕЙСИ</a>
+                </li>
+                <li class="nav-item list">
+                    <a class="nav-link link" href="index.html#why-us" data-lang-ua="ЧОМУ МИ?"
+                        data-lang-pl="DLACZEGO MY?">ЧОМУ
+                        МИ?</a>
+                </li>
+
+            </ul>
+
+            <div class="language-switch">
+                <a class="language-link link active" href="#" data-language="ua">UA</a>
+                <span class="language-divider"></span>
+                <a class="language-link link" href="#" data-language="pl">PL</a>
+            </div>
+            <div class="button cta-btn">
+                <div class="button-content">
+                    <div class="rectangles">
+                        <div class="rectangle_one"></div>
+                        <div class="rectangle_two"></div>
+                    </div>
+                    <div class="btn-txt" data-lang-ua="ПОЧНІМО СПІВПРАЦЮ" data-lang-pl="ROZPOCZNIJMY WSPÓŁPRACĘ">
+                        ПОЧНІМО СПІВПРАЦЮ</div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="mobile-menu hidden">
+        <div class="mobile-menu-container">
+            <div class="mobile-menu-header">
+
+
+                <button class="close-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="icon-menu"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <ul class="mobile-nav-list">
+                <li><a href="index.html#about" data-lang-ua="ПРО НАС" data-lang-pl="O NAS">ПРО НАС</a></li>
+                <li><a href="index.html#services" data-lang-ua="НАШІ ПОСЛУГИ" data-lang-pl="NASZE USŁUGI">НАШІ
+                        ПОСЛУГИ</a>
+                </li>
+                <li><a href="index.html#cases" data-lang-ua="НАШІ КЕЙСИ" data-lang-pl="NASZE PRZYКЛАДЫ">НАШІ КЕЙСИ</a>
+                </li>
+                <li><a href="index.html#why-us" data-lang-ua="ЧОМУ МИ?" data-lang-pl="DLACZEGO MY?">ЧОМУ МИ?</a></li>
+            </ul>
+
+            <div class="button-mob">
+                <div class="button-content-mob" onclick="closeMenuAndScrollToForm()">
+                    <div class="rectangles-mob">
+                        <div class="rectangle-mob-one"></div>
+                        <div class="rectangle-mob-two"></div>
+                    </div>
+                    <div class="btn-txt-mob" data-lang-ua="ПОЧНІМО СПІВПРАЦЮ" data-lang-pl="ROZPOCZNIJMY WSPÓŁPRACĘ">
+                        ПОЧНІМО СПІВПРАЦЮ
+                    </div>
+                    <div class="line-mob"></div>
+                </div>
+            </div>
+
+            <div class="mobile-menu-footer">
+                <a class="logo-link-mob link">
+                    <svg class="icon-mob">
+                        <use href="./images/icon.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                <p>svsdigitalagency@gmail.com</p>
+                <a href="https://www.instagram.com/svs.digital.agency/" target="_blank" class="btn-instagram-mob link"
+                    data-lang-ua="INSTAGRAM" data-lang-pl="INSTAGRAM">INSTAGRAM</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</header>
+
+
+
+
+
+
+
+<main>
+    <!-------------------ГОЛОВНИЙ БЛОК КЕЙСУ----------------->
+    <section class="section-main">
+        <div class="section-cases-one container">
+            <div class="cases-one">
+                <div class="background-animation-cases"></div>
+                <div class="text-cases-one">
+                    <h1 class="title-cases-one-">MARKETING</h1>
+                    <h1 class="title-cases-one">AGENCY</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------ТЕКСТОВИЙ БЛОК КЕЙСУ----------------->
+    <section class="text-section">
+        <div class="text-container-cases-three container">
+            <p class="text-one"
+                data-lang-ua="До нас звернулася маркетингова агенція Capone, з амбітним завданням створити сайт, що відображає дух епохи мафіозі 1920-х років."
+                data-lang-pl="Do nas zwróciła się agencja marketingowa Capone z ambitnym zadaniem stworzenia strony internetowej, która odzwierciedla ducha epoki mafijnej lat 1920 wieku.">
+                До нас звернулася маркетингова агенція Capone, з амбітним завданням створити сайт, що відображає дух
+                епохи мафіозі 1920-х років.
+            </p>
+            <p class="text-two"
+                data-lang-ua="Вони шукали не просто сайт, а справжню атмосферну платформу, яка б передавала атмосферу того часу, підкреслюючи індивідуальність та стиль бренду."
+                data-lang-pl="Szukali nie tylko strony internetowej, ale prawdziwie atmosferycznej platformy, która oddawałaby klimat tamtej epoki, podkreślając indywidualność i styl marki.">
+                Вони шукали не просто сайт, а справжню атмосферну платформу, яка б передавала атмосферу того часу,
+                підкреслюючи індивідуальність та стиль бренду.
+            </p>
+
+            <p class="text-two"
+                data-lang-ua="Крім цього, вони також потребували ефективних рішень для таргетованої реклами та управління соціальними мережами. "
+                data-lang-pl="Oprócz tego potrzebowali również skutecznych rozwiązań dla reklamy targetowanej oraz zarządzania mediami społecznościowymi.">
+                Крім цього, вони також потребували ефективних рішень для таргетованої реклами та управління соціальними
+                мережами.
+            </p>
+            <div class="button-two cta-btn">
+                <div class="button-content">
+                    <div class="rectangles">
+                        <div class="rectangle_one"></div>
+                        <div class="rectangle_two"></div>
+                    </div>
+                    <div class="btn-txt" data-lang-ua="ПОЧНІМО СПІВПРАЦЮ" data-lang-pl="ROZPOCZNIJMY WSPÓŁPRACĘ">
+                        ПОЧНІМО
+                        СПІВПРАЦЮ</div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-------------------ТРЕТІЙ БЛОК КЕЙСУ----------------->
+
+    <section class="section-one-presentation">
+        <div class="case-presentation-one container">
+            <div class="case-presentation-desctop">
+                <div class="presentation-content-desctop">
+                    <video autoplay loop muted playsinline>
+                        <source src="./video/кейс-маркетингова-агенція.webm" type="video/webm">
+                        <source src="./video/кейс-маркетингова-агенція.webm" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="presentation-content-mobile">
+                <img src="./images/mob3_1.png" alt="mob" class="image-mobile">
+            </div>
+        </div>
+    </section>
+
+    <!-------------------ЧЕТВЕРТИЙ БЛОК КЕЙСУ----------------->
+
+    <section class="mobile-section">
+        <div class="mobile container">
+            <div class="presentation-content-mobile">
+                <img src="./images/mob3_2.png" alt="mob" class="image-mobile">
+            </div>
+            <div class="presentation-content-mobile">
+                <img src="./images/mob3_3.png" alt="mob" class="image-mobile">
+            </div>
+            <div class="presentation-content-mobile">
+                <img src="./images/mob3_4.png" alt="mob" class="image-mobile">
+            </div>
+            <div class="presentation-content-mobile">
+                <img src="./images/mob3_5.png" alt="mob" class="image-mobile">
+            </div>
+        </div>
+    </section>
+
+
+    <!-------------------П'ЯТИЙ БЛОК КЕЙСУ----------------->
+
+    <section class="section-two-presentation">
+        <div class="case-presentation-three container">
+
+            <div class="case-presentation-three-desctop">
+                <div class="presentation-content-desctop">
+                    <video autoplay loop muted playsinline>
+                        <source src="./Video-3/1.webm" type="video/webm">
+                        <source src="./Video-3/1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------ШОСТИЙ БЛОК КЕЙСУ----------------->
+
+    <section class="list-cases-one">
+        <div class="list-section list-cases container">
+
+            <!-- Перший блок -->
+            <div class="list-one">
+                <div class="list-item">
+                    <div class="icon-and-title">
+                        <div class="icon-group">
+                            <div class="icon-small"></div>
+                            <div class="icon-big"></div>
+                        </div>
+                        <h3 class="list-title" data-lang-ua="Дизайн" data-lang-pl="design">
+                            Дизайн</h3>
+                    </div>
+                    <p class="list-txt cases-list"
+                        data-lang-ua="розробили стильний та атмосферний сайт, використовуючи елементи епохи 1920-х років, такі як класичні шрифти, темні кольори та візуальні акценти, що підкреслюють розкіш та загадковість. Сайт створено з фокусом на естетику та зручність для користувачів."
+                        data-lang-pl="Stworzyliśmy stylową i klimatyczną stronę internetową, wykorzystując elementy epoki lat 20. XX wieku, takie jak klasyczne czcionki, ciemne kolory i wizualne akcenty podkreślające luksus i tajemniczość. Strona została zaprojektowana z naciskiem na estetykę i wygodę użytkownika.">
+                        розробили стильний та атмосферний сайт, використовуючи елементи епохи 1920-х років, такі як
+                        класичні шрифти, темні кольори та візуальні акценти, що підкреслюють розкіш та загадковість.
+                        Сайт створено з фокусом на естетику та зручність для користувачів.
+                    </p>
+                </div>
+                <div class="list-line"></div>
+            </div>
+
+            <!-- Другий блок -->
+            <div class="list-one">
+                <div class="list-item">
+                    <div class="icon-and-title">
+                        <div class="icon-group">
+                            <div class="icon-small"></div>
+                            <div class="icon-big"></div>
+                        </div>
+                        <h3 class="list-title" data-lang-ua="Таргет реклама" data-lang-pl="Target reklama">
+                            Таргет реклама</h3>
+                    </div>
+                    <p class="list-txt cases-list"
+                        data-lang-ua="Для залучення цільової аудиторії ми налаштували ефективні рекламні кампанії, орієнтуючись на потенційних клієнтів, які цінують історичну тематику і стиль. Таргетування допомогло збільшити охоплення та підвищити конверсії."
+                        data-lang-pl="Aby przyciągnąć docelową grupę odbiorców, skonfigurowaliśmy skuteczne kampanie reklamowe, koncentrując się na potencjalnych klientach, którzy cenią tematykę historyczną i styl. Targetowanie pomogło zwiększyć zasięg oraz poprawić współczynnik konwersji.">
+                        Для залучення цільової аудиторії ми налаштували ефективні рекламні кампанії, орієнтуючись на
+                        потенційних клієнтів, які цінують історичну тематику і стиль. Таргетування допомогло збільшити
+                        охоплення та підвищити конверсії.
+                    </p>
+                </div>
+                <div class="list-line"></div>
+            </div>
+
+            <!-- Третій блок -->
+            <div class="list-one">
+                <div class="list-item">
+                    <div class="icon-and-title">
+                        <div class="icon-group">
+                            <div class="icon-small"></div>
+                            <div class="icon-big"></div>
+                        </div>
+                        <h3 class="list-title" data-lang-ua="SMM" data-lang-pl="SMM">
+                            SMM</h3>
+                    </div>
+                    <p class="list-txt cases-list"
+                        data-lang-ua="Ми забезпечили стратегічне управління соціальними мережами, створюючи контент, який резонує з аудиторією. Підвищили активність у соцмережах, залучили нових підписників та підвищили взаємодію з брендом."
+                        data-lang-pl="Zapewniliśmy strategiczne zarządzanie mediami społecznościowymi, tworząc treści, które rezonują z odbiorcami. Zwiększyliśmy aktywność w mediach społecznościowych, przyciągnęliśmy nowych obserwujących oraz poprawiliśmy interakcję z marką.">
+                        Ми забезпечили стратегічне управління соціальними мережами, створюючи контент, який резонує з
+                        аудиторією. Підвищили активність у соцмережах, залучили нових підписників та підвищили взаємодію
+                        з брендом.
+                    </p>
+                </div>
+                <div class="list-line"></div>
+            </div>
+            <div class="button-two cta-btn cases-btn">
+                <div class="button-content">
+                    <div class="rectangles">
+                        <div class="rectangle_one"></div>
+                        <div class="rectangle_two"></div>
+                    </div>
+                    <div class="btn-txt" data-lang-ua="ПОЧНІМО СПІВПРАЦЮ" data-lang-pl="ROZPOCZNIJMY WSPÓŁPRACĘ">
+                        ПОЧНІМО
+                        СПІВПРАЦЮ</div>
+                    <div class="line"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-------------------СЬОМИЙ БЛОК КЕЙСУ----------------->
+
+    <section class="section-one-presentation">
+        <div class="case-presentation-one container">
+            <div class="case-presentation-desctop">
+                <div class="presentation-content-desctop">
+                    <video autoplay loop muted playsinline>
+                        <source src="./Video-3/2.webm" type="video/webm">
+                        <source src="./Video-3/2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="presentation-content-mobile">
+                <img src="./images/mob3_6.png" alt="mob" class="image-mobile">
+            </div>
+        </div>
+    </section>
+
+    <!-------------------ВОСЬМИЙ БЛОК КЕЙСУ----------------->
+    <section class="section-four-presentation">
+        <div class="case-presentation-two container">
+
+            <div class="presentation-content-mobile mobile-presentation">
+                <img src="./images/mob3_7.png" alt="mob" class="image-mobile">
+            </div>
+            <div class="case-presentation-desctop">
+                <div class="presentation-content-desctop">
+                    <video autoplay loop muted playsinline>
+
+                        <source src="./Video-3/3.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------ДЕВ'ЯТИЙ БЛОК КЕЙСУ----------------->
+    <section class="section-one-presentation">
+        <div class="case-presentation-one container">
+            <div class="case-presentation-desctop">
+                <div class="presentation-content-desctop">
+                    <video autoplay loop muted playsinline>
+                        <source src="./Video-3/4.webm" type="video/webm">
+                        <source src="./Video-3/4.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="presentation-content-mobile">
+                <img src="./images/mob3_8.png" alt="mob" class="image-mobile">
+            </div>
+        </div>
+    </section>
+
+
+    <!-------------------ДЕСЯТИЙ БЛОК КЕЙСУ----------------->
+    <section class="section-four-presentation">
+        <div class="case-presentation-two container">
+
+            <div class="presentation-content-mobile mobile-presentation">
+                <img src="./images/mob3_9.png" alt="mob" class="image-mobile">
+            </div>
+            <div class="case-presentation-desctop">
+                <div class="presentation-content-desctop">
+                    <video autoplay loop muted playsinline>
+                        <source src="./Video-3/5.webm" type="video/webm">
+                        <source src="./Video-3/5.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!------------------- ФОРМА ЗВ'ЯЗКУ----------------->
+    <section class="form-section">
+        <div class="form container" id="form-section">
+            <div class="form-content">
+                <h4 class="title-form" data-lang-ua="ЗВ'ЯЖІТЬСЯ ЗІ МНОЮ" data-lang-pl="SKONTAKTUJ SIĘ ZE MNĄ">
+                    ЗВ'ЯЖІТЬСЯ
+                    ЗІ МНОЮ</h4>
+                <div class="btn-form">
+                    <button class="btn-form-" data-type="telegram" data-lang-ua="TELEGRAM"
+                        data-lang-pl="TELEGRAM">TELEGRAM</button>
+                    <button class="btn-form-" data-type="instagram" data-lang-ua="INSTAGRAM"
+                        data-lang-pl="INSTAGRAM">INSTAGRAM</button>
+                    <button class="btn-form-" data-type="phone" data-lang-ua="ТЕЛЕФОН"
+                        data-lang-pl="TELEFON">ТЕЛЕФОН</button>
+                    <button class="btn-form-" data-type="email" data-lang-ua="EMAIL" data-lang-pl="EMAIL">EMAIL</button>
+                </div>
+            </div>
+            <div class="input-section hidden">
+                <input type="text" id="input-field" placeholder="ваш нік в соц мережі або номер телефону"
+                    data-lang-ua="ваш нік в соц мережі або номер телефону"
+                    data-lang-pl="Twój nick w mediach społecznościowych lub numer telefonu">
+            </div>
+            <div class="checkbox-btn">
+                <div class="checkbox-section">
+                    <input type="checkbox" id="agree">
+                    <label for="agree"
+                        data-lang-ua="відправляючи форму, ви погоджуєтесь з політикою обробки персональних данних"
+                        data-lang-pl="wysyłając formularz, zgadzasz się z polityką przetwarzania danych osobowych">
+                        відправляючи форму, ви погоджуєтесь з політикою обробки персональних данних
+                    </label>
+                </div>
+
+                <div class="button-form">
+                    <div class="button-content-form" id="submit-btn">
+                        <div class="rectangles-form">
+                            <div class="rectangle_one-form"></div>
+                            <div class="rectangle_two-form"></div>
+                        </div>
+                        <div class="btn-txt-form" data-lang-ua="ЗАЛИШИТИ ЗАЯВКУ" data-lang-pl="ZŁÓŻ WNIOSEK">
+                            ЗАЛИШИТИ
+                            ЗАЯВКУ</div>
+                        <div class="line-form"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!------------------- ФУТЕР----------------->
+
+<footer class="footer container">
+    <div class="logo-email">
+        <a class="logo-link link">
+            <svg class="icon" width="154" height="124">
+                <use href="./images/icon.svg#icon-logo"></use>
+            </svg>
+        </a>
+        <div class="email-address">svsdigitalagency@gmail.com</div>
+    </div>
+
+    <div class="nav-btn">
+        <ul class="nav-list list">
+            <li class="nav-item list">
+                <a class="nav-link link" href="#about" data-lang-ua="ПРО НАС" data-lang-pl="O NAS">ПРО НАС</a>
+            </li>
+            <li class="nav-item list">
+                <a class="nav-link link" href="#services" data-lang-ua="НАШІ ПОСЛУГИ" data-lang-pl="NASZE USŁUGI">НАШІ
+                    ПОСЛУГИ</a>
+            </li>
+            <li class="nav-item list">
+                <a class="nav-link link" href="#cases" data-lang-ua="НАШІ КЕЙСИ" data-lang-pl="NASZE PRZYKŁADY">НАШІ
+                    КЕЙСИ</a>
+            </li>
+            <li class="nav-item list">
+                <a class="nav-link link" href="#why-us" data-lang-ua="ЧОМУ МИ?" data-lang-pl="DLACZEGO MY?">ЧОМУ
+                    МИ?</a>
+            </li>
+            <li class="nav-item language-switch">
+                <a class="language-link link active" href="#" data-language="ua">UA</a>
+                <span class="language-divider"></span>
+                <a class="language-link link" href="#" data-language="pl">PL</a>
+            </li>
+        </ul>
+        <a class="btn-footer link" href="https://www.instagram.com/svs.digital.agency/" target="_blank"
+            data-lang-ua="INSTAGRAM" data-lang-pl="INSTAGRAM">INSTAGRAM</a>
+    </div>
+
+    <div class="footer-txt">
+        <p class="footer_txt">© 2024</p>
+        <p class="footer_txt">SVS Digital Agency.</p>
+        <p class="footer_txt" data-lang-ua="Політика конфіденційності" data-lang-pl="Polityka prywatności">Політика
+            конфіденційності</p>
+    </div>
+</footer>
+<div id="notification" class="notification hidden"></div>
+
+
+
+
+<!-- Подключение JavaScript -->
+<script src="js/1.js"></script>
+<script src="js/2.js"></script>
+<script src="js/3.js"></script>
+<script src="js/4.js"></script>
+<script src="js/5.js"></script>
+<script src="js/6.js"></script>
+<script src="js/7.js"></script>
+<script src="js/8.js"></script>
+<script src="js/9.js"></script>
+<script src="js/10.js"></script>
+<script src="js/11.js"></script>
+<script src="js/12.js"></script>
+<script src="js/13.js"></script>
+
+<script>
+    // Обработка кликов для навигации
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault(); // Блокируем стандартное поведение
+            const href = this.getAttribute('href'); // Получаем ссылку
+            window.location.href = href; // Переход по адресу
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

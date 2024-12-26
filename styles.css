@@ -197,7 +197,7 @@ body {
 /* Прелоадер исчезает */
 .preloader-hidden {
     opacity: 0;
-    /* Прозрачность */
+
     transition: opacity 0.5s ease-out;
     /* Плавное исчезновение */
     pointer-events: none;
@@ -449,21 +449,21 @@ body {
     width: 100%;
     height: 100%;
     background-color: #000;
-    /* Черный фон */
-    color: #fff;
+
+    color: var(--color-1);
     /* Белый текст */
     z-index: 1000;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transform: translateX(-100%);
-    /* Прячем меню изначально */
+
     transition: transform 0.3s ease-in-out;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    /* Плавный скроллинг на мобильных устройствах */
+
     pointer-events: auto;
-    /* Включаем взаимодействие */
+
 }
 
 .mobile-menu-container {
@@ -471,17 +471,17 @@ body {
     flex-direction: column;
     padding: 20px;
     gap: 40px;
-    /* Расстояние между секциями */
+
 }
 
 .mobile-menu.hidden {
     transform: translateX(-100%);
-    /* Скрываем меню */
+
 }
 
 .mobile-menu.show {
     transform: translateX(0);
-    /* Показываем меню */
+
 }
 
 .mobile-menu-header {
@@ -497,7 +497,7 @@ body {
 }
 
 .language-link-mob {
-    color: #fff;
+    color: var(--color-1);
     text-transform: uppercase;
     text-decoration: none;
     font-family: "Namu-Pro", sans-serif;
@@ -530,7 +530,7 @@ body {
     height: 30px;
     cursor: pointer;
     color: var(--color-2);
-    background: var(--just-white);
+    background: none;
     border: 1px solid var(--color-2);
     border-radius: 50%;
     justify-content: center;
@@ -583,7 +583,7 @@ body {
 .mobile-nav-list a {
     font-family: "Namu-Pro", sans-serif;
     font-size: 24px;
-    color: #fff;
+    color: var(--color-1);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 400;
@@ -1203,18 +1203,18 @@ body {
         flex-direction: column;
         align-items: center;
         cursor: pointer;
-        width: 294px;
+        width: 250px;
     }
 
     .button-content {
-        width: 294px;
+        width: 250px;
         height: 66px;
         position: static;
         cursor: pointer;
     }
 
     .btn-txt {
-        font-size: 22px;
+        font-size: 18px;
         width: 250px;
         line-height: 140%;
         font-weight: 400;
@@ -1259,7 +1259,7 @@ body {
         border-style: solid;
         border-color: #b80202;
         border-width: 4px 0 0 0;
-        width: 294px;
+        width: 250px;
         height: 0px;
         position: absolute;
         left: 0px;
