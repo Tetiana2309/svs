@@ -290,6 +290,7 @@
 .image-mobile {
     height: auto;
     object-fit: cover;
+    background-color: none;
 }
 
 @media screen and (max-width: 768px) {
